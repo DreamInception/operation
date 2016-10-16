@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: #f0eff5;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+ul li{
+    list-style: none;
+}
+
+img{
+    border: none;
+    -webkit-transform: scale(1) rotate(0) translate3d(0,0,0);
+    transform: scale(1) rotate(0) translate3d(0,0,0);
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+input{
+    border: none;
+}
+.f-fl{
+    float: left;
+}
+.f-fr{
+    float: right;
+}
+.f-cb:after{
+    content: '';
+    font-size: 0;
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+.f-rel{
+    position: relative;
+}
+
+.maskBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background: rgba(0,0,0,0.6);
+    display: block;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.errorMsg{
+    font-size: 1.5rem;
+    color: red;
+    line-height: 4rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0;
+}
+.propagate-activity-container{
+    width: 100%;
+    position: relative;
+    background: url("../images/zip_pics/bg01.jpg") no-repeat;
+    background-size: 100% 100%;
+
+}
+.propagate-activity-container .sc-pos,.propagate-reg-container .sc-pos{
+    width: 94%;
+    position: absolute;
+    left: 3%;
+    background: url("../images/zip_pics/bannerWin.png") no-repeat;
+    background-size: 100% 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.propagate-activity-container .downloadBtn{
+    width: 86%;
+    left: 7%;
+    position: absolute;
+    background: url("../images/zip_pics/download_button.png") no-repeat;
+    background-size: 100% 100%;
+}
+.propagate-activity-container .banner, .propagate-reg-container .banner{
+    width: 72.5%;
+    display: block;
+    margin: 0 auto;
+}
+.propagete-button-next{
+    right: 0;
+    left: auto;
+    background-image: url("../images/arrow_right.png");
+}
+.propagete-button-prev{
+    left: 0;
+    right: auto;
+    background-image: url("../images/arrow_left.png");
+}
+.propagete-button-prev,.propagete-button-next{
+    position: absolute;
+    top: 57%;
+    width: 22px;
+    height: 35px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 22px 35px;
+    -webkit-background-size: 22px 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.propagate-reg-container{
+    width: 100%;
+    position: relative;
+    background: url("../images/zip_pics/bg02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.propagate-reg-container .reg-form-container{
+    position: absolute;
+    width: 86%;
+    margin: 0 auto;
+    display: block;
+    left: 7%;
+}
+.propagate-reg-container .reg-form-container .form-input-box{
+    position: relative;
+    border:1px solid #000;
+    /*height:4rem;*/
+    margin-bottom: 1.5rem;
+}
+.propagate-reg-container .reg-form-container img{
+    position: absolute;
+    width: 4%;
+    left: 5%;
+    margin-top: 1.2rem;
+}
+.propagate-reg-container .reg-form-container input{
+    font-size:2rem;
+    /*line-height: 4rem;*/
+    padding: 1rem 0;
+    text-indent: 20%;
+    color:#727171;
+    letter-spacing:1px;
+    text-align:left;
+    border: none;
+    width: 100%;
+}
+.propagate-reg-container .reg-form-container .verifiyCode{
+    width: 47%!important;
+    text-indent: 15%;
+}
+.propagate-reg-container .reg-form-container .sendBtn{
+    width: 47%;
+    background:#ffce08;
+    height:4rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto;
+    border: solid 1px #000;
+}
+.propagate-reg-container .reg-form-container .regBtn{
+    position: absolute;
+    display: block;
+    width: 62%;
+    left: 19%;
+    position: absolute;
+    background: url("../images/zip_pics/reg.png") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+}
+.propagate-reg-container .reg-Win{
+    position: fixed;
+    top: 25%;
+    left: 13%;
+    z-index: 1000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+    background: url("../images/zip_pics/regWin.png") no-repeat;
+    background-size: 100% 100%;
+    width: 74%;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+    transition: all 0.2s;
+    display: none;
+}
+.propagate-reg-container .reg-Win .closeBtn{
+    position: absolute;
+    right: 1rem;
+    top: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    background: url("../images/zip_pics/closeBtn.png") no-repeat;
+    background-size: 100% 100%;
+}
+.propagate-reg-container .reg-Win .downloadBtn{
+    position: absolute;
+    right: 7%;
+    top: 24rem;
+    width: 86%;
+    left: 7%;
+    height: 4.5rem;
+    display: block;
+    background: url("../images/zip_pics/reg-gift.png") no-repeat;
+    background-size: 100% 100%;
+}
+.propagate-reg-container .reg-form-container .imgCodeLink{
+    width: 47%;
+    background:#fff;
+    height:4rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto;
+    border: solid 1px #000;
+    position: relative;
+}
+.propagate-reg-container .reg-form-container .imgCode{
+    width: 100% !important;
+    height: 100%!important;
+    left: 0!important;
+    top: 0!important;
+    position: absolute;
+    margin: 0!important;
+}

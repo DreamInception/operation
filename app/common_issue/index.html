@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Iconos -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
+
+</head>
+
+<body>
+<div class="chosen-tabs f-cb">
+    <a href="javascript:;" class="f-fl selectTab" id="calBenefit">
+        <img src="images/calculate_big.png" alt="">
+
+        <p>计息收益</p>
+    </a>
+    <a href="javascript:;"  class="f-fl" id="transact">
+        <img src="images/transact_big.png" alt="" style="">
+
+        <p>充值提现</p>
+    </a>
+    <a href="javascript:;"  class="f-fl" id="trycash">
+        <img src="images/trycash_big.png" alt="">
+
+        <p>体验金</p>
+    </a>
+    <a href="javascript:;"  class="f-fl" id="safety">
+        <img src="images/safety_big.png" alt="" >
+
+        <p>资金安全</p>
+    </a>
+</div>
+<!-- Contenedor -->
+<ul class="accordion" id="calBenefit-content" style="display: block">
+    <li>
+        <div class="link">在多肉理财投资有门槛吗？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>100元起</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">活期计息时间<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>15点之前转入当日计息，15点之后转入次日计息，周末、法定假日均不受影响。次日4点以后显示，可以在资产页面查看昨日收益。</li>
+        </ul>
+    </li>
+	<!--<li>
+        <div class="link">利息余额是是什么？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>利息余额是多肉理财的余额账户，活期每日收益会自动到账到利息余额账户。（其中，利息余额超过10元，将自动复投活期。）</li>
+        </ul>
+    </li>-->
+    <li>
+        <div class="link">定期计息时间<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>用户购买定期产品后，隔日开始计息，到期后一次性还本付息。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">投资收益如何计算？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>投资金额＊（年化利率/360天＊投资天数）=投资收益。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">活期赎回到账时间<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>由于多肉理财活期采用是债权转让模式，活期赎回相当于用户申请债权转让，活期赎回期默认为一个工作日，如果周五周六周日申请活期赎回操作，则周一活期赎回资金到账户余额。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">定期到期<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>定期到期后，用户资产和利息会自动赎回到账户余额里，如需要提现，可以直接在账户余额里进行提现操作。</li>
+        </ul>
+    </li>
+</ul>
+<ul class="accordion" id="transact-content">
+    <li>
+        <div class="link">充值提现是否需要手续费？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>多肉理财账户充值无需任何手续费用。提现活动期内暂不收取任何手续费用。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">充值到账时间是多久？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>充值到账时间为银行卡扣款后实时到账到账户余额，如五分钟内银行扣款成功，但账户余额金额不对，请联系我们的客服热线为4008200699，客服官方微信为“duoroutina”</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">充值的时候提示我超限额了，怎么办？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>请到【充值限额】页面查看各银行限额标准，然后根据标准降低每次充值额度，分多次充值。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">可以用信用卡进行充值吗？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>多肉理财严禁信用卡充值、套现等行为，一经发现将予以处罚，包括但不限于：限制收款、冻结账户、永久停止服务，并会影响银行征信记录。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">为什么我的银行卡无法充值或充值失败？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>由于多肉理财使用的支付渠道为第三方支付渠道，支付渠道对于各银行卡支付有相关额度限制，所以您在大金额充值失败后可能是由于超出了支付限额。具体充值金额限制在多肉的微信公众号有公布哦。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">提现流程<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>点击账户余额“取现”，输入取现金额，点击取现按钮，即可提现成功。</li>
+            <li>工作日提现操作则当日到账，如果周六周日提现操作，则周一到账。提现金额没有限制，提现费用免费。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">怎么才能换绑银行卡？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>请您联系我们的客服提供相关的证明身份的材料进行换绑银行卡。</li>
+        </ul>
+    </li>
+</ul>
+<ul class="accordion" id="trycash-content">
+    <li>
+        <div class="link">什么是体验金？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>体验金是多肉理财赠送的虚拟特权本金，附带体验金收益率与期限，自动产生体验投资收益。体验金到期后，所产生的投资收益将以奖励的方式发放给您，同时多肉将收回到期的特权体验本金。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">体验金怎么激活？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>注册体验金自动激活，每日付息到利息余额，激活体验金需要投资激活，具体激活条件看激活体验金的使用规则。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">总资产包括哪些？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>总资产包括的部分：账户余额+活期资产+定期资产+白拿资产+冻结资产=总资产。
+            </li>
+        </ul>
+    </li>
+    </ul>
+<ul class="accordion"  id="safety-content">
+    <li>
+        <div class="link">资金同卡进出<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>通过实名校验认证系统，确保每个投资人信息都为真实、且自主认证通过。在资金回款路径上，禁止投资人账户间转账，明确指定原路返回原则，即本金和收益的赎回或余额提现均回到投资人申购时所绑定的本人所持银行卡。
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">账户安全问题<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>用户开通交易账户时，严格按照法律相关规定，在线对客户身份进行鉴权，以确认投资者开户行为真实、有效。</li>
+            <li>用户要求重置密码、修改重要账户信息时，将严格按照法律相关规定，验证这些操作确实是投资人本人发起的。</li>
+            <li>当用户认为确有必要时，可以通过客户服务电话联系我们，我们会立即锁定您账户的所有操作，以确保您的账户安全和资金安全。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">电子合同是否有法律效力？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>《合同法》第十条：当事人订立合同，有书面形式、口头形式和其他形式。第十一条：书面形式是指合同书、信件和数据电文（包括电报、电传、传真、电子数据交换和电子邮件）等可以有形地表现所载内容的形式。依据上述法律规定可见电子合同是我国法律明确认可的一种合同形式，所以效力可以等同于传统的纸质合同。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">如何查看投资体验金及收益？<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>登录后，可以在“我的账户”中查看投资体验金和收益详情。</li>
+        </ul>
+    </li>
+    <li>
+        <div class="link">联系客服<i class="fa fa-angle-down"></i></div>
+        <ul class="submenu">
+            <li>我们的客服热线为4008200699，客服官方微信为“duoroutina”，同时问题反馈邮箱为service@51vest.com。</li>
+        </ul>
+    </li>
+</ul>
+
+<script src='js/jquery.js'></script>
+
+<script src="js/index.js"></script>
+</body>
+</html>

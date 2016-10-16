@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="format-detection" content="telephone=no">
+    <base href="../iphone-lottery/">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style_by_gx.css">
+    <script src="scripts/common/html5shiv-explain.js"></script>
+    <script type="text/javascript" src="scripts/common/jquery-2.0.3.min.js"></script>
+    <title>多肉理财</title>
+</head>
+<body style="background-color: #f42f42">
+<article class="poster_container" id="poster_container" v-cloak>
+	<div class="headDiv"></div>
+	<img src="images/font1.png" id="img1" alt="" class="headFontImg" >
+	<img src="images/font2.png" id="img2" alt="" class="headFontImg" style="display: none;">
+    <img alt="" class="bgImg" id="bgImg" src="images/posterImg.png">
+     <img alt="" class="orginImg" id="orginImg" src="images/posterImg.png" style="display: none;">
+    <!--<img v-bind:src="codeImg" alt="" class="codeImg"id="codeImg">-->
+    <!---->
+    <!--<img src="images/posterImg.png" alt="" class="bgImg" id="bgImg">-->
+    <!--<img src="/api/qrcode?content=https://html-master.51doro.com/operation/iphone-lottery/remmend-reg.html?telephone=18721941653" alt="" class="codeImg" id="codeImg">-->
+    <img v-bind:src="mergeImg" class="mergeImg" id="mergeImg">
+</article>
+</body>
+<script src="scripts/common/vue.min.js"></script>
+<script src="scripts/common/vue-resource.min.js"></script>
+<script src="scripts/common/custom-function.js"></script>
+<script src="scripts/poster.js"></script>
+<!-- custom script start -->
+</html>

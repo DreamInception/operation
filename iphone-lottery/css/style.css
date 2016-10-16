@@ -1,0 +1,445 @@
+/**{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	
+}
+
+ul li {
+	list-style: none;
+}
+
+
+/*img {*/
+    /*border: none;*/
+    /*-webkit-transform: scale(1) rotate(0) translate3d(0,0,0);*/
+    /*transform: scale(1) rotate(0) translate3d(0,0,0);*/
+/*}*/
+
+
+hr {
+	border: 1px solid #e6e6e6;
+	margin-bottom: 1.3rem;
+}
+
+a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+input {
+	border: none;
+}
+
+.inviteInfoArticle{
+	background: #f42f42;
+	/*height: 100%;*/
+}
+.inviteInfoArticle .headImg {
+	width: 100%;
+}
+
+.inviteInfoArticle .buttonImg {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 1.4rem;
+}
+
+.inviteInfoArticle .inviteImg {
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 1.8rem;
+}
+.inviteInfoArticle .tableSection{
+	margin-top: 1rem;
+   background-image: url(../images/inviteFrame.png);
+    background-size: 100% 100%;
+   /*	border: 1px solid #cfcfcf;
+   	background-color: white;
+   	border-radius: 0.5px;*/
+    width: 80%;
+    margin-left: 10%;
+    height: 300px;
+    padding: 5rem 0 2rem 0;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.inviteInfoArticle .mytable {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	/*padding-top: 60px;*/
+}
+
+.inviteInfoArticle .mytable table {
+	width: 100%;
+	/*border: 1px solid #999;*/
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.inviteInfoArticle .mytable th {
+	/*height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-bottom: 1px solid #999;
+            padding: 0;
+            margin: 0;*/
+	border-bottom: 0.5px solid #cfcfcf;
+	font: #6c37c7;
+	color: #6c37c7;
+	font-size: 1.5rem;
+	font-family: -webkit-body;
+	padding-bottom: 1rem;
+}
+
+.inviteInfoArticle .mytable td {
+	height: 45px;
+	line-height: 45px;
+	/*text-align: center;*/
+	border-top: 1px solid #cfcfcf;
+	margin: 0;
+	/*font-family: -webkit-pictograph;*/
+	/*border-style: dashed;*/
+	/*width:15rem;*/
+}
+
+.inviteInfoArticle .rightTd{
+	text-align: right;
+	padding-right:0.5rem;
+}
+
+.ticketArticle{
+	background: #5e2faa;
+	/*height: 100%;*/
+}
+
+
+.ticketArticle .headImg {
+	width: 100%;
+}
+
+.ticketArticle .buttonImg {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 1.4rem;
+}
+
+.lotteryArticle{
+	
+}
+
+.lotteryArticle .headImg {
+	width: 100%;
+}
+
+.lotteryArticle .myTicketSection{
+	position: absolute;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.lotteryArticle .myTicketFont{
+	position: absolute;
+    color: #fa330f;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.lotteryArticle .fontPostion1{
+	font-size: 1.8rem;
+	top: 5rem;
+	left: 20%;
+}
+
+.lotteryArticle .fontPostion2{
+	font-size: 1.8rem;
+	top: 5rem;
+	left: 63%;
+}
+
+.lotteryArticle .fontPostion3{
+	font-size: 2.2rem;
+	top: 7rem;
+    left: 25%;
+}
+
+.lotteryArticle .fontPostion4{
+	font-size: 2.2rem;
+	top: 6rem;
+	left: 34%;
+}
+
+.lotteryArticle .fontPostion5{
+	font-size: 2.2rem;
+	top: 7rem;
+	left: 68%;
+}
+
+.lotteryArticle .fontPostion6{
+	font-size: 2.2rem;
+	top: 6rem;
+	left: 77%;
+}
+
+.lotteryArticle .lotteryBox{
+	width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 11rem;
+}
+
+.lotteryArticle .fontPostion7{
+	font-size: 2.1rem;
+    /*top: 20rem;*/
+    left: 26%;
+}
+
+.lotteryArticle .mytable {
+	width: 80%;
+	margin: 0 auto;
+	/*padding-top: 60px;*/
+}
+
+.lotteryArticle .mytable table {
+	width: 100%;
+	/*border: 1px solid #999;*/
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.lotteryArticle .mytable th {
+	/*height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-bottom: 1px solid #999;
+            padding: 0;
+            margin: 0;*/
+	border-bottom: 0.5px solid #cfcfcf;
+	font-size: 1.3rem;
+	font-family: -webkit-body;
+	padding-bottom: 1rem;
+}
+
+.lotteryArticle .mytable td {
+	height: 35px;
+	line-height: 35px;
+	font-size: 1.3rem;
+	/*text-align: center;*/
+	border-top: 1px solid #cfcfcf;
+	margin: 0;
+	/*font-family: -webkit-pictograph;*/
+	/*border-style: dashed;*/
+}
+
+.lotteryArticle .rightTd{
+	text-align: right;
+	padding-right:0.5rem;
+}
+
+.lotteryArticle .haveTickets{
+	margin-top: 11rem;
+}
+
+.lotteryArticle .showMyTicket {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
+}
+
+.inviteInfoArticle .noTickets{
+	width: 30%;
+    position: absolute;
+    margin-left: 25%;
+    /*top: 63%;*/
+   /* height: 18%;*/
+}
+
+.lotteryEnd .backImg {
+	width: 100%;
+}
+
+.lotteryEnd .backSection2{
+	position: relative;
+}
+
+.lotteryEnd #awardNum1{
+	position: absolute;
+    top: 4.75%;
+    left: 23.6%;
+    font-size: 3rem;
+    color: white;
+}
+
+.lotteryEnd #awardNum2{
+	position: absolute;
+    top: 4.75%;
+    left: 33.4%;
+    font-size: 3rem;
+    color: white;
+}
+
+.lotteryEnd #awardNum3{
+	position: absolute;
+    top: 4.75%;
+    left: 43.2%;
+    font-size: 3rem;
+    color: white;
+}
+
+.lotteryEnd #awardNum4{
+	position: absolute;
+    top: 4.75%;
+    left: 53%;
+    font-size: 3rem;
+    color: white;
+}
+
+.lotteryEnd #awardNum5{
+	position: absolute;
+    top: 4.75%;
+    left: 62.8%;
+    font-size: 3rem;
+    color: white;
+}
+
+.lotteryEnd #awardNum6{
+	position: absolute;
+    top: 4.75%;
+    left: 72.6%;
+    font-size: 3rem;
+    color: white;
+}
+
+.lotteryEnd #awardText{
+	position: absolute;
+    top: 8.2%;
+    color: red;
+    left: 17.3%;
+    font-size: 16px;
+}
+
+.lotteryEnd .secondAwardImg{
+	width: 35%;
+    position: absolute;
+    top: 12%;
+    left: 32%;
+}
+
+.lotteryEnd .thirdAward{
+	width: 50%;
+    position: absolute;
+    top: 56%;
+    left: 25%;
+}
+
+.lotteryEnd .mytable {
+	width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 40%;
+	/*padding-top: 60px;*/
+}
+
+.lotteryEnd .mytable table {
+	width: 100%;
+	/*border: 1px solid #999;*/
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.lotteryEnd .mytable th {
+	/*height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-bottom: 1px solid #999;
+            padding: 0;
+            margin: 0;*/
+	border-bottom: 0.5px solid #cfcfcf;
+	font: #6c37c7;
+	font-size: 1.5rem;
+	font-family: -webkit-body;
+	padding-bottom: 1rem;
+}
+
+.lotteryEnd .mytable td {
+	height: 45px;
+	line-height: 45px;
+	/*text-align: center;*/
+	border-bottom: 1px solid #cfcfcf;
+	margin: 0;
+	width: 50%
+	/*font-family: -webkit-pictograph;*/
+	/*border-style: dashed;*/
+	/*width:15rem;*/
+}
+
+.lotteryEnd .mytable1 {
+	width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 59%;
+    left: 10%;
+    height: 35%;
+	/*padding-top: 60px;*/
+}
+
+.lotteryEnd .mytable1 table {
+	width: 100%;
+	/*border: 1px solid #999;*/
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.lotteryEnd .mytable1 th {
+	/*height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-bottom: 1px solid #999;
+            padding: 0;
+            margin: 0;*/
+	border-bottom: 0.5px solid #cfcfcf;
+	font: #6c37c7;
+	font-size: 1.5rem;
+	font-family: -webkit-body;
+	padding-bottom: 1rem;
+}
+
+.lotteryEnd .mytable1 td {
+	height: 45px;
+	line-height: 45px;
+	/*text-align: center;*/
+	border-bottom: 1px solid #cfcfcf;
+	margin: 0;
+	width: 50%
+	/*font-family: -webkit-pictograph;*/
+	/*border-style: dashed;*/
+	/*width:15rem;*/
+}
+
+.lotteryEnd .showMyTicket{
+	position: absolute;
+    top: 95%;
+    left: 35%;
+    font-size: 1.5rem;
+}

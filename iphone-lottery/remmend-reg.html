@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="format-detection" content="telephone=no">
+    <base href="../iphone-lottery/">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style_by_gx.css">
+    <script src="scripts/common/html5shiv-explain.js"></script>
+    <script type="text/javascript" src="scripts/common/jquery-2.0.3.min.js"></script>
+    <title>多肉理财</title>
+</head>
+
+<body style="background: #f42f42">
+<article class="recommend-reg-container"  id="recommend-reg-container" v-cloak>
+    <img class="headImg" src="images/iphone_invite_top.png">
+
+    <p class="recommend" v-show="recomment">
+        {{recomment}}推荐您
+    </p>
+    <section class="reg-content">
+        <div class="rc-pad">
+            <div class="form-input-box">
+                <img src="images/phoneIcon.png" class="form-icon">
+                <input class="phoneNum" type="text" placeholder="请输入常用手机号码" v-model="phoneNum" @blur="phoneblur">
+            </div>
+            <div class="form-input-box">
+                <img src="images/lockIcon.png" class="form-icon">
+                <input class="password" type="password" placeholder="设置登录密码(6-20位)" v-model="password" @blur="pswblur">
+
+            </div>
+            <div class="form-input-box f-cb" style="border: none;">
+                <input class="verifiyCode f-fl" type="text" placeholder="图形验证码" v-model="imgCodeText">
+                <a href="javascript:;" class="imgCodeLink f-fr" v-on:click="getImgCode">
+                    <img v-bind:src="imgData" class="imgCode" alt="">
+                </a>
+            </div>
+            <div class="form-input-box f-cb" style="border: none;">
+                <input class="verifiyCode f-fl" type="text" placeholder="短信验证码" v-model="msgTxt">
+                <button id="sendBtn" class="sendBtn f-fr" v-on:click="sendSms" v-bind="{ disabled: disableAttr}"
+                        v-html="sendTxt"></button>
+            </div>
+            <p class="errorMsg">{{validateForm.errorMsg}}</p>
+            <button class="gainPrizeBtn" @click="submitForm" :disabled="isDisable"></button>
+        </div>
+
+    </section>
+</article>
+</body>
+<script src="scripts/common/vue.min.js"></script>
+<script src="scripts/common/vue-resource.min.js"></script>
+<script src="scripts/common/custom-function.js"></script>
+<script src="scripts/recommend_reg.js"></script>
+<!-- custom script start -->
+<!-- custom script end -->
+
+</html>

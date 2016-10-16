@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="format-detection" content="telephone=no">
+    <base href="../iphone-lottery/">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style_by_gx.css">
+    <script src="scripts/common/html5shiv-explain.js"></script>
+    <script type="text/javascript" src="scripts/common/jquery-2.0.3.min.js"></script>
+    <title>多肉理财</title>
+</head>
+<body style="background-color: #fa330f">
+<article class="prize-result-container" id="prize-result-container" v-cloak>
+    <img src="images/couponTop.png" class="couponTop">
+    <section class="f-cb prizeSum">
+        <div class="f-fl">
+            <p class="text">我的奖券</p>
+
+            <p class="number">{{myTicket}}张</p>
+        </div>
+        <div class="f-fr">
+            <p class="text">所有奖券</p>
+
+            <p class="number">{{ticketSum}}张</p>
+        </div>
+    </section>
+    <section class="prize-result-list">
+        <div class="prl-title f-cb">
+            <p class="prl-first f-fl">序号</p>
+
+            <p class="prl-second f-fl">抽奖号码</p>
+
+            <p class="prl-third f-fl">获得方式</p>
+        </div>
+        <ul class="prl-content">
+            <li class="f-cb" v-for="item in resultList">
+                <p class="prl-first f-fl">{{$index+1}}</p>
+
+                <p class="prl-second f-fl">{{item.ticketAutoId}}</p>
+
+                <p class="prl-third f-fl">{{item.ticketFrom}}</p>
+            </li>
+
+
+        </ul>
+    </section>
+</article>
+<script src="scripts/common/vue.min.js"></script>
+<script src="scripts/common/vue-resource.min.js"></script>
+<script src="scripts/common/custom-function.js"></script>
+<script src="scripts/prizeResult.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta name="format-detection" content="telephone=no">
+		<base href="../iphone-lottery/">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="scripts/common/html5shiv-explain.js"></script>
+		<script type="text/javascript" src="scripts/common/jquery-2.0.3.min.js"></script>
+		<title>多肉理财</title>
+	</head>
+
+	<body>
+		<article class="ticketArticle">
+			<img class="headImg" src="images/ticket.png">
+			<section class="">
+				<img class="buttonImg" src="images/download.png" 
+					onclick="downloadApp();">
+				<!--<images class="inviteImg" src="images/inviteFriend.png">-->
+			</section>
+			
+		</article>
+	</body>
+
+	<script src="scripts/common/vue.min.js"></script>
+	<script src="scripts/common/vue-resource.min.js"></script>
+	<script src="scripts/common/custom-function.js"></script>
+	<!-- custom script start -->
+	<!-- custom script end -->
+
+	<script>
+		window.onload = function() {
+			$("body").css("background","#5e2faa");
+		};
+		
+		function downloadApp(){
+			window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.duorou.duorouandroid#opened';
+		}
+	</script>
+
+</html>

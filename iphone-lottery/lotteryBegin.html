@@ -1,0 +1,74 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta name="format-detection" content="telephone=no">
+		<base href="../iphone-lottery/">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="scripts/common/html5shiv-explain.js"></script>
+		<script type="text/javascript" src="scripts/common/jquery-2.0.3.min.js"></script>
+		<script src="scripts/lotteryBegin.js?"></script>
+		<title>多肉理财</title>
+	</head>
+
+	<body>
+		<article class="lotteryArticle">
+			<img class="headImg" src="images/lottery.png">
+			<section class="myTicketSection">
+				<!--<img id="noTicketImg" class="headImg" src="images/myTicket.png">-->
+				<span class="myTicketFont fontPostion1">我的奖券</span>
+				<span class="myTicketFont fontPostion2">所有奖券</span>
+				<span class="myTicketFont fontPostion3" id="myTCount">0张</span>
+				<!--<span class="myTicketFont fontPostion4">张</span>-->
+				<span class="myTicketFont fontPostion5" id="totalTCount">0张</span>
+				<!--<span class="myTicketFont fontPostion6">张</span>-->
+				<section class="haveTickets">
+					<div class="mytable" style="overflow: auto;">
+						<table>
+							<thead>
+							<tr>
+								<th style="text-align: left;">序号</th>
+								<th style="text-align: right;">抽奖号码</th>
+								<th style="text-align: right;">获取方式</th>
+							</tr>
+							</thead>
+							<tbody>
+							<!--<tr>
+			                    <td>1</td>
+			                    <td class="rightTd">100234</td>
+			                    <td class="rightTd">多肉D30—1</td>
+			                </tr>
+			                <tr>
+			                    <td>1</td>
+			                    <td class="rightTd">100234</td>
+			                    <td class="rightTd">多肉D30—1</td>
+			                </tr>
+			                <tr>
+			                    <td>1</td>
+			                    <td class="rightTd">100234</td>
+			                    <td class="rightTd">多肉D30—1</td>
+			                </tr>-->
+							</tbody>
+						</table>
+					</div>
+					<div class="showMyTicket" onclick="showMyTicket();">查看全部奖券   >></div> 
+				</section>
+				<section class="noTickets" style="display: none;">
+					<img id="noTicketImg" class="lotteryBox" src="images/lotteryBox.png">
+					<span class="myTicketFont fontPostion7">暂无奖券，快去投资哦~</span>
+				</section>
+			</section>
+		</article>
+	</body>
+
+	<script src="scripts/common/vue.min.js"></script>
+	<script src="scripts/common/vue-resource.min.js"></script>
+	<script src="scripts/common/custom-function.js"></script>
+	<!-- custom script start -->
+	<!-- custom script end -->
+
+</html>

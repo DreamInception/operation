@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="scripts/swiper.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-2.0.3.min.js"></script>
+    <script src="scripts/swiper.jquery.min.js"></script>
+    <title>多肉理财</title>
+</head>
+<body>
+<article class="propagate-reg-container" id="propagate-reg-container" >
+    <div class="sc-pos">
+        <div class="swiper-container ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/banner01.jpg" alt="" class="banner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/banner02.jpg" alt="" class="banner" style="margin-top: 2rem;">
+                </div>
+
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="propagete-button-prev"></div>
+            <div class="propagete-button-next"></div>
+            <!-- If we need pagination -->
+            <!--<div class="swiper-pagination"></div>-->
+        </div>
+    </div>
+    <div class="reg-form-container">
+        <div class="form-input-box">
+            <img src="images/phone.png" class="form-icon">
+            <input class="phoneNum" type="text" placeholder="请输入常用手机号码" v-model="phoneNum">
+            <p class="errorMsg">{{validateForm.phoneErrorMsg}}</p>
+        </div>
+        <div class="form-input-box">
+            <img src="images/unlock.png" class="form-icon">
+            <input class="password" type="password" placeholder="登录密码(6-20位)" v-model="password">
+            <p class="errorMsg">{{validateForm.pswErrorMsg}}</p>
+        </div>
+        <div class="form-input-box f-cb" style="border: none;">
+            <input class="verifiyCode f-fl" type="text" placeholder="图形验证码" v-model="imgCodeText">
+            <a href="javascript:;" class="imgCodeLink f-fr" v-on:click="getImgCode">
+                <img v-bind:src="imgData" class="imgCode" alt="">
+            </a>
+        </div>
+        <div class="form-input-box f-cb" style="border: none;">
+            <input class="verifiyCode f-fl" type="text" placeholder="短信验证码" v-model="msgTxt">
+            <button id="sendBtn" class="sendBtn f-fr" v-on:click="sendSms"  v-bind="{ disabled: disableAttr}" v-html="sendTxt"></button>
+        </div>
+        <!--<p class="errorMsg">{{validateForm.smsErrorMsg}}</p>-->
+        <!--<a href="javascript:;" class="regBtn" @click="submitForm" :disabled="isDisable"></a>-->
+        <button class="regBtn" @click="submitForm" :disabled="isDisable"></button>
+    </div>
+    <div class="reg-Win">
+        <div class="f-rel">
+            <a href="javascript:;" class="closeBtn" @click="closeWin"></a>
+            <a href="https://itunes.apple.com/cn/app/id1067328168?mt=8" class="downloadBtn"></a>
+
+        </div>
+    </div>
+</article>
+
+<script src="scripts/vue.min.js"></script>
+<script src="scripts/vue-resource.min.js"></script>
+<script src="scripts/common.js"></script>
+<script src="scripts/propagateSecond.js"></script>
+</body>
+
+</html>

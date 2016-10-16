@@ -1,0 +1,33 @@
+.btn{
+	background:#aa9154;
+    height:4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.txt{
+    font-size:1.2rem;
+    color:#aa9154;
+    line-height:1.8rem;
+    text-align:left;
+    margin-top: 1.6rem;	
+}
+
+.img{
+	width: 13.2rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    margin-top: 2.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.paragraph{
+	background:#ffffff;
+    height:16rem;
+    margin-top: 2rem;
+}
