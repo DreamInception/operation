@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${title!"种钱游戏-多肉理财"}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <link rel="stylesheet" type="text/css" href="css/duorou.css"/>
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+//        var is_harvest = ${is_harvest!0};
+//        var relate_product_url = '${relate_product_url!""}';
+        $(function() {
+            $("#harvestBtn").on('click', function () {
+//                if (is_harvest == 1) {
+//                    showHarvestDiv();
+//                } else {
+//                    $.ajax({
+//                        url: '/jye/plant/harvest',
+//                        type: 'post',
+//                        data: '',
+//                        dataType: 'json',
+//                        success: function (resp) {
+//                            if (resp.response_code == 0) {
+//                                showHarvestDiv();
+//                            } else {
+//                                alert(resp.response_message);
+//                                return false;
+//                            }
+//                        },
+//                        error: function () {
+//                            alert('error');
+//                        }
+//                    });
+//                }
+                showHarvestDiv();
+            });
+
+            $('#harvest').bind('click', function () {
+                hideHarvestDiv();
+            });
+
+//            $("#toExperienceGold").bind('click', function () {
+//                location.href = '${(globalProp.phpUrl)!"http://wx.duoroulicai.com"}' + relate_product_url;
+//                return false;
+//            });
+
+//            $("#toIphone").bind('click', function () {
+//                location.href = "${(globalProp.phpUrl)!"http://wx.duoroulicai.com"}/jyw/Account/tiyanAccount.do";
+//                return false;
+//            });
+//
+//            setTimeout(function () {
+//                $('.finalContent1').removeClass("running");
+//            }, 3000);
+//
+//            setTimeout(function () {
+//                $('.finalContent1').addClass("running");
+//            }, 5000);
+//
+//            setInterval(function () {
+//                setTimeout(function () {
+//                    $('.finalContent1').removeClass("running");
+//                }, 3000);
+//
+//                setTimeout(function () {
+//                    $('.finalContent1').addClass("running");
+//                }, 5000);
+//            }, 5000)
+//
+//        });
+
+            function showHarvestDiv() {
+                var height = $(window).height() + 'px';
+                $("#harvest").css("height", height);
+                $("#harvest").show();
+            }
+
+            function hideHarvestDiv() {
+                $("#harvest").hide();
+            }
+        })
+    </script>
+</head>
+<body class="pagebg4">
+<div class="bgBottom bgBottom4"></div>
+<!-- div class="iconWrap">
+    <a href="${(globalProp.phpUrl)!"http://wx.duoroulicai.com"}/index.php?s=/Account/activities.html" class="pageHome pageHomeBlue"></a>
+    <if condition="empty($user_plant_record['plant_sharetime']) || $user_plant_record['plant_sharetime'] == '0000-00-00 00:00:00'">
+        <!--<a href="javascript:void(0)" class="pageShare pageShareBlue"></a>
+    </if>
+</div-->
+<!--<#if user_plant_record?? && (user_plant_record.plantSharetime?string["yyyy-MM-dd HH:mm:ss"] == "0000-00-00 00:00:00")!false>-->
+
+<!--<#else >-->
+<!--&lt;!&ndash;<div class="addMoneyWrap"><span class="addMoney" id="addMoney"></span></div>&ndash;&gt;-->
+<!--</#if>-->
+<!--<#if is_harvest?? && tiyan_record??>-->
+<!--&lt;!&ndash;已收获，查看体验金&ndash;&gt;-->
+<!--<a href="${(globalProp.phpUrl)!"http://wx.duoroulicai.com"}/jyw/Account/tiyanAccount.do">-->
+    <!--<div class="pageFinalWrap">-->
+        <!--<div class="pageFinalContent2"></div>-->
+        <!--<div class="finalContent1 running"></div>-->
+    <!--</div>-->
+<!--</a>-->
+<!--<#else>-->
+<!--收获-->
+<div class="pageFinalWrap">
+    <div class="pageFinalContent" id="harvestBtn"></div>
+    <div class="finalContent1 running"></div>
+</div>
+<!--</#if>-->
+
+<div class="hotspotWrap" id="harvest">
+    <div class="hotspot">
+        <!--<p class="totalGold"><span id="totalGold">${plant_grow_amount!""}</span><span class="totalGoldIcon">元</span></p>-->
+        <p class="totalGold"><span id="totalGold">????</span><span class="totalGoldIcon">元</span></p>
+        <img src="images/harvest.png">
+    <!--<#if relate_product_order?size != 0>-->
+        <!--&lt;!&ndash;体验金已激活但还未到账&ndash;&gt;-->
+        <!--<div class="doubleAct">-->
+            <!--<div class="actItem">-->
+                <!--<p>注册投资千元起</p>-->
+                <!--<p>激活万元体验金</p>-->
+                <!--<span class="unClickable">激活体验金</span>-->
+                <!--<p style="margin-top:10px;">分享该游戏可额外获得10000元体验金</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--<#else >-->
+        <!--体验金未激活-->
+        <div class="doubleAct">
+            <div class="actItem" id="toExperienceGold">
+                <p>注册投资千元起</p>
+                <p>激活万元体验金</p>
+                <span>激活体验金</span>
+                <p style="margin-top:10px;">分享该游戏可额外获得10000元体验金</p>
+            </div>
+        </div>
+    <!--</#if>-->
+    </div>
+</div>
+<div class="pageUp" id="pageUp"></div>
+<div class="pageRule" id="pageRule">
+    <div class="pageDown"></div>
+    <p>活动细则：</p>
+    <p>1.该游戏每个账户仅拥有一次参与机会</p>
+    <p>2.体验金须成功购买多肉理财D7系列产品，体验金预期年化收益率为10%，周期为7天</p>
+    <p>3.本活动最终解释权归多肉理财所有</p>
+</div>
+<script type="text/javascript" src="js/jumpPage.js"></script>
+<!--<#include "base.ftl">-->
+</body>
+</html>

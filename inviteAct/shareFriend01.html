@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="fastclick.js"></script>
+    <title>Boss决定给你发奖金了</title>
+    <script>
+        $(function(){
+            var height = $(window).height;
+            initRect();
+            initCou();
+            function initRect(){
+                var rec_width = $(".sf_rectArea").width();
+                var rec_height = rec_width * 719 / 1125;
+                var head_icon = $(".headCircle").width();
+                $(".sf_rectArea").css("height",rec_width*719/1125);
+                $(".headCircle").css("height",head_icon).css("paddingTop",rec_height*0.087).css("paddingBottom",rec_height*0.087);
+            }
+            function initCou(){
+                var cou_width = $(".ticketArea").width();
+                var cou_height = cou_width*452/935;
+                $(".ticketArea").css("height",cou_height);
+                $(".ticketArea p:first-child").css("paddingTop",cou_height*40/152);
+                $(".ticketArea p:last-child").css("paddingTop",cou_height*14/152);
+            }
+            FastClick.attach(document.body);
+
+        })
+    </script>
+</head>
+<body>
+    <article class="sf_container">
+        <img src="images/starBg.png" class="star">
+        <section class="sf_rectArea">
+            <div class="headCircle">
+                 <img src="images/headIcon.png">
+            </div>
+            <p class="friend_give_text">
+                <span class="name">陈晨晨</span>在多肉理财邀请好友活动中
+            </p>
+            <ul class="giveAmount f-cb">
+               <li class="ga_left">
+                    <p>累计邀请特权本金</p>
+                   <p style="text-indent: 2rem;"><span class="money">20000</span>元</p>
+               </li>
+                <li class="ga_right">
+                    <p>累计邀请投资人数</p>
+                    <p style="text-indent: 3rem;"><span class="money">30</span>人</p>
+                </li>
+            </ul>
+        </section>
+        <section class="sf_inputArea">
+            <div class="ticketArea" style="margin-top: -1rem;">
+                <p>
+                    <span class="name">陈晨晨</span>在多肉理财平台送您
+                </p>
+                <p>￥143330</p>
+            </div>
+            <input type="text" class="sf_phoneNum" placeholder="请输入手机号">
+            <a href="#" class="gainTyj_Btn">
+                立即领取奖金
+            </a>
+        </section>
+        <img src="images/ruleBook.png" class="ruleBook">
+    </article>
+</body>
+</html>

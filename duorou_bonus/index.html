@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css">
+    <title>多肉理财-你的年终奖有多少？</title>
+    <script type="text/javascript" src="http://api.youziku.com/webfont/FastJS/yzk_D12014BDB914AA29"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.rotate.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<!---------------- page0---------------->
+<section id="page0" class="page0" style="display: block">
+    <div id="played" class="shelter">
+        <div class="played_txt">
+            <p>你已经领取过奖励啦~</p>
+            <p>不要贪心哦！</p>
+            <a href="javascript:void(0)" id="readLink" class="readLink"><img src="images/read.png"></a>
+        </div>
+    </div>
+    <div id="passed" class="shelter">
+        <img src="images/arrow.png" class="arrow">
+        <div class="passed_txt">
+            <p>目前你的游戏参与次数为0</p>
+            <p>分享游戏给小伙伴可获得</p>
+            <p>额外参与机会</p>
+            <a href="javascript:void(0)"  id="passLink" class="passLink"><img src="images/pass.png"></a>
+        </div>
+    </div>
+    <div class="div_element">
+        <img src="images/monkey.gif" class="monkey">
+            <img src="images/pB_light.png" id="pinkBig" class="pinkBig">
+            <img src="images/pS_light.png" id="pinkSmall" class="pinkSmall">
+            <img src="images/rS_light.png" id="redSmall" class="redSmall">
+            <img src="images/rB_light.png" id="redBig" class="redBig">
+    </div>
+    <div id="jump" class="div_Btn">
+        <a href="javascript:void(0)"><img src="images/btn.png" class="btn"></a>
+    </div>
+</section>
+<!---------------- page1---------------->
+<section id="page1" class="page1">
+    <div class="inputBox1">
+    <select id="salary" class="salary">
+        <option value="0" selected="selected">1k-3k</option>
+        <option value="1">3k-5k</option>
+        <option value="2">5k-10k</option>
+        <option value="3">10k-18k</option>
+        <option value="4">18k以上</option>
+    </select>
+    </div>
+    <div class="inputBox2">
+    <select id="appearance" class="appearance">
+        <option value="0" selected="selected">沉鱼落雁</option>
+        <option value="1">闭月羞花</option>
+        <option value="2">貌似潘安</option>
+        <option value="3">长得寒碜</option>
+        <option value="4">消失在人海</option>
+    </select>
+    </div>
+    <div class="inputBox3">
+    <select id="moral" class="moral">
+        <option value="0" selected="selected">人品爆发</option>
+        <option value="1">人品一般</option>
+        <option value="2">人品弱爆了</option>
+    </select>
+    </div>
+    <div id="submit1" class="div_moneyBtn">
+        <a href="javascript:void(0)"><img src="images/gain.png" class="btn"></a>
+    </div>
+</section>
+<!---------------- page2---------------->
+<div id="page2" class="page2">
+    <div class="divTitle">
+        <p class="title">哇！<span id="yApp" class="hl_txt"></span><span class="hl_txt">，</span><span id="yMoral"class="hl_txt"></span><span>的你</span></p>
+        <p class="title">年终奖有 <span id="money" class="hl_txt"></span> 元！</p>
+    </div>
+    <div id="submit2" class="div_findBtn">
+        <a href="javascript:void(0)"><img src="images/find.png" class="btn"></a>
+    </div>
+</div>
+
+<!---------------- page3---------------->
+<section id="page3" class="page3">
+    <div id="divDoor1" class="divDoor1">
+        <a href="javascript:void(0)" class="close"><img src="images/door_close.png" ></a>
+        <a href="javascript:void(0)" class="open"><img src="images/door_open1.png" ></a>
+    </div>
+    <div id="divDoor2" class="divDoor2">
+        <a href="javascript:void(0)" class="close"><img src="images/door_close.png" ></a>
+        <a href="javascript:void(0)" class="open"><img src="images/door_open2.png" ></a>
+    </div>
+    <div id="divDoor3" class="divDoor3">
+        <a href="javascript:void(0)" class="close"><img src="images/door_close.png" ></a>
+        <a href="javascript:void(0)" class="open"><img src="images/door_open3.png" ></a>
+    </div>
+</section>
+
+<!---------------- subPage1---------------->
+<section id="subPage1" class="subPage1">
+    <div id="maskBg1" class="maskBg">
+        <div class="showWindow">
+            <div id="phoneBill" class="swo">
+                <p class="pTitle">找到话费</p>
+                <ul class="pReward2">
+                    <li>送你</li>
+                    <li class="reward"><span id="phoneTax1_0"></span>元话费</li>
+                    <li>常联系~</li>
+                </ul>
+            </div>
+            <div id="empty1" class="swo">
+                <ul class="pReward2">
+                    <li>好遗憾！</li>
+                    <li>这个红包空空如也</li>
+                    <li>啥都没有~</li>
+                </ul>
+            </div>
+            <div id="trySalary1" class="swo">
+                <p class="pTitle">找到体验金</p>
+                <ul class="pReward2">
+                    <li>财神附体</li>
+                    <li>竟然找到了</li>
+                    <li class="reward"><span id="tryNum1_0"></span>元体验金！</li>
+                </ul>
+            </div>
+            <div class="pButton">
+                <a href="#" id="selectBtn1_1" class="selectBtn">继续寻找</a>
+                <a href="#" id="selectBtn1_2" class="selectBtn" style="display: none">收获你的奖品</a>
+            </div>
+        </div>
+    </div>
+        <div id="showMsg1" class="showMsg">
+            <p class="itemName1">找到红包：<span id="pocketNum1" class="itemNum"></span></p>
+            <p class="itemName2">体验金：<span id="tryNum1_1" class="itemNum"></span></p>
+            <p class="itemName3">话费：<span id="phoneTax1_1" class="itemNum"></span></p>
+        </div>
+
+    <p class="cap">倒计时：<span class="minute">01</span>:<span class="second">30</span></p>
+    <div id="page1_Up" class="page1_Up">
+        <a href="javascript:void(0)" class="rp"><img src="images/front_redPocket1.png"></a>
+    </div>
+    <div id="page1_Mid" class="page1_Mid">
+        <a href="javascript:void(0)" class="rp"><img src="images/front_redPocket2.png"></a>
+    </div>
+    <div id="page1_Down" class="page1_Down">
+        <a href="javascript:void(0)" class="rp"><img src="images/front_redPocket3.png"></a>
+    </div>
+
+</section>
+<!---------------- subPage2---------------->
+<section id="subPage2" class="subPage2">
+    <div id="maskBg2" class="maskBg">
+        <div class="showWindow">
+            <div id="mobileFlow" class="swo">
+                <p class="pTitle">找到流量</p>
+                <ul class="pReward1">
+                    <li>临近月底</li>
+                    <li>流量告急</li>
+                    <li class="reward">送你<span id="flowNum2_0"></span>M流量继续High!</li>
+                </ul>
+            </div>
+            <div id="empty2" class="swo">
+                <ul class="pReward2">
+                    <li>好遗憾！</li>
+                    <li>这个红包空空如也</li>
+                    <li>啥都没有~</li>
+                </ul>
+            </div>
+            <div id="trySalary2" class="swo">
+                <p class="pTitle">找到体验金</p>
+                <ul class="pReward2">
+                    <li>财神附体</li>
+                    <li>竟然找到了</li>
+                    <li class="reward"><span id="tryNum2_0"></span>元体验金！</li>
+                </ul>
+            </div>
+            <div class="pButton">
+                <a href="#" id="selectBtn2_1" class="selectBtn">继续寻找</a>
+                <a href="#" id="selectBtn2_2" class="selectBtn" style="display: none">收获你的奖品</a>
+            </div>
+        </div>
+    </div>
+    <div id="showMsg2" class="showMsg">
+        <p class="itemName1">找到红包：<span id="pocketNum2" class="itemNum"></span></p>
+        <p class="itemName2">体验金：<span id="tryNum2_1" class="itemNum"></span></p>
+        <p class="itemName3">流量：<span id="flowNum2_1" class="itemNum"></span></p>
+    </div>
+
+    <p class="cap">倒计时：<span class="minute">01</span>:<span class="second">30</span></p>
+    <div id="page2_Up" class="page2_Up">
+        <a href="javascript:void(0)" class="rp"><img src="images/boss_redPocket1.png"></a>
+    </div>
+    <div id="page2_Mid" class="page2_Mid">
+        <a href="javascript:void(0)" class="rp"><img src="images/boss_redPocket2.png"></a>
+    </div>
+    <div id="page2_Down" class="page2_Down">
+        <a href="javascript:void(0)" class="rp"><img src="images/boss_redPocket3.png"></a>
+    </div>
+
+</section>
+<!---------------- subPage3---------------->
+<section id="subPage3" class="subPage3">
+    <div id="maskBg3" class="maskBg">
+        <div class="showWindow">
+            <div id="cashSum" class="swo">
+                <p class="pTitle">找到现金</p>
+                <ul class="pReward1">
+                    <li>恭喜您找到</li>
+                    <li><span id="moneyNum3_0"></span>元现金！</li>
+                    <li>蚊子再小也是肉，</li>
+                    <li>积少成多~</li>
+                </ul>
+            </div>
+            <div id="empty3" class="swo">
+                <ul class="pReward2">
+                    <li>好遗憾！</li>
+                    <li>这个红包空空如也</li>
+                    <li>啥都没有~</li>
+                </ul>
+            </div>
+            <div id="trySalary3" class="swo">
+                <p class="pTitle">找到体验金</p>
+                <ul class="pReward2">
+                    <li>财神附体</li>
+                    <li>竟然找到了</li>
+                    <li class="reward"><span id="tryNum3_0"></span>元体验金！</li>
+                </ul>
+            </div>
+            <div class="pButton">
+                <a href="#" id="selectBtn3_1" class="selectBtn">继续寻找</a>
+                <a href="#" id="selectBtn3_2" class="selectBtn" style="display: none">收获你的奖品</a>
+            </div>
+        </div>
+    </div>
+    <div id="showMsg3" class="showMsg">
+        <p class="itemName1">找到红包：<span id="pocketNum3" class="itemNum"></span></p>
+        <p class="itemName2">体验金：<span id="tryNum3_1" class="itemNum"></span></p>
+        <p class="itemName3">现金：<span id="moneyNum3_1" class="itemNum"></span></p>
+    </div>
+
+    <p class="cap">倒计时：<span class="minute">01</span>:<span class="second">30</span></p>
+    <div id="page3_Up" class="page3_Up">
+        <a href="javascript:void(0)" class="rp"><img src="images/fina_redPocket1.png"></a>
+    </div>
+    <div id="page3_Mid" class="page3_Mid">
+        <a href="javascript:void(0)" class="rp"><img src="images/fina_redPocket2.png"></a>
+    </div>
+    <div id="page3_Down" class="page3_Down">
+        <a href="javascript:void(0)" class="rp"><img src="images/fina_redPocket3.png"></a>
+    </div>
+</section>
+
+<script type="text/javascript">
+        $youziku.load("#page2", "86a0bad6a1534840892f47f5cc2bf6e1", "FZJianZhi-M23S");
+        $youziku.load("#subPage1", "86a0bad6a1534840892f47f5cc2bf6e1", "FZJianZhi-M23S");
+        $youziku.load("#subPage2", "86a0bad6a1534840892f47f5cc2bf6e1", "FZJianZhi-M23S");
+        $youziku.load("#subPage3", "86a0bad6a1534840892f47f5cc2bf6e1", "FZJianZhi-M23S");
+        $youziku.draw();
+</script>
+</body>
+</html>

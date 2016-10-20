@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <title>元宵节活动</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		html{
+			font-size: 62.5%;
+			width: 100%;
+			height: 100%;
+		}
+
+		body{
+			background: #fff;
+			width: 100%;
+			height: 100%;
+		}
+		img{
+			border: none;
+			-webkit-transform: scale(1) rotate(0deg) translate3d(0,0,0);
+			transform: scale(1) rotate(0deg) translate3d(0,0,0);
+		}
+		a{
+			text-decoration: none;
+			-webkit-tap-highlight-color:transparent;
+		}
+		.contentWrap{
+			background: url("yxFest.png") no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+		}
+		.fast_Invest{
+			display: block;
+			position: absolute;
+			width: 92%;
+			left: 4%;
+			margin: 0 auto;
+			height: 4rem;
+			line-height: 4rem;
+			font-size: 2rem;
+			color: #fff;
+			background: #c61c2f;
+		}
+		.act_bottom{
+			width: 100%;
+			position: absolute;
+			text-align: center;
+			font-size: 1rem;
+			color: #cc9e75;
+		}
+		.act_bottom p{
+			padding-bottom: 0.5rem;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			var height = $(window).height();
+			$(".fast_Invest").css("top",height*0.78);
+			$(".act_bottom").css("top",height*0.89);
+		});
+	</script>
+</head>
+<body>
+	<div class="contentWrap">
+		<a href="http://wx.duoroulicai.com/jyw/Product/index.do" class="fast_Invest">立即投资</a>
+		<div class="act_bottom">
+			<p>活动结束后，返现会在5个工作日内发放至多肉理财账户内</p>
+			<p>本次活动最终解释权归多肉理财所有</p>
+		</div>
+	</div>
+</body>
+</html>

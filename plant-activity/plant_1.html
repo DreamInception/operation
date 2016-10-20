@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>种钱游戏-多肉理财</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <link rel="stylesheet" type="text/css" href="css/duorou.css"/>
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+</head>
+<body class="pagebg2">
+<div class="countdown"></div>
+<div class="bgBottom bgBottom2"></div>
+<!--div class="iconWrap">
+    <a href="${(globalProp.phpUrl)!"http://wx.duoroulicai.com"}/index.php?s=/Account/activities.html" class="pageHome pageHomeGreen"></a>
+    <if condition="empty($user_plant_record['plant_sharetime']) || $user_plant_record['plant_sharetime'] == '0000-00-00 00:00:00'">
+        <!-- <a href="javascript:void(0)" class="pageShare"></a> >
+    </if>
+</div-->
+<!--<#if user_plant_record?? && (user_plant_record.plantSharetime?string["yyyy-MM-dd HH:mm:ss"] == "0000-00-00 00:00:00")!false>-->
+
+<!--<#else >-->
+<!--&lt;!&ndash;<div class="addMoneyWrap"><span class="addMoney" id="addMoney"></span></div>&ndash;&gt;-->
+<!--</#if>-->
+<div class="page2Content">
+    <!--<span id="currentMoney">${plant_grow_amount!""}</span><span class="moneyIcon">元</span>-->
+    <span id="currentMoney">????</span><span class="moneyIcon">元</span>
+    <img class="iconGif" src="images/moneyIcon.gif">
+</div>
+
+<!--<div class="hotspotWrap" id="hotspotWrap">-->
+    <!--<div class="hotspot">-->
+        <!--<img src="images/page5.png">-->
+        <!--<div class="hotClose"></div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<script type="text/javascript">
+    $(function () {
+        $(".countdown").css("color", "#357009");
+    });
+</script>
+<script type="text/javascript" src="js/jumpPage.js"></script>
+<script type="text/javascript">
+//    $(function () {
+//        if(isWeixinBrowser()) {
+//            $.ajax({
+//                url:"/jye/plant/attention",
+//                success:function(data){
+//                    if(data.success == 0){
+//                        fixedShow("hotspotWrap");
+//                    } else if(data.success != 1) {
+//                        console(data.msg);
+//                    }
+//                }
+//            });
+//        }
+//    });
+//    function isWeixinBrowser(){
+//        var ua = navigator.userAgent.toLowerCase();
+//        return (/micromessenger/.test(ua)) ? true : false ;
+//    }
+</script>
+<!--<#include "base.ftl">-->
+</body>
+</html>

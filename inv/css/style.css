@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+ul li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    border: none;
+    -webkit-transform: scale(1) rotate(0deg) translate3d(0,0,0);
+    -o-transform: scale(1) rotate(0deg) translate3d(0,0,0);
+    -moz-transform: scale(1) rotate(0deg) translate3d(0,0,0);
+    transform: scale(1) rotate(0deg) translate3d(0,0,0);
+}
+
+a{
+    color: #3e3836;
+    text-decoration: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+select{
+    border: solid 1px #000000;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-expand :none;
+    -moz-appearance: none;
+    padding-right: 15px;
+    /*background: url("../images/arrow.png") no-repeat scroll right center transparent;*/
+    /*background-size: 15%;*/
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    box-shadow: 0 3px 8px #9B9B9B inset,
+                 0 -3px 8px #9B9B9B inset;
+}
+
+input{
+    border: none;
+	outline: none;
+}
+.contentWrap{
+    /*margin-top: 64px;*/
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    background: url("../images/bg.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+.island{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    z-index: 5;
+    animation: shakeUd 3s linear infinite;
+    -moz-animation: shakeUd 3s linear infinite;
+    -o-animation: shakeUd 3s linear infinite;
+    -webkit-animation: shakeUd 3s linear infinite;
+}
+.window{
+    width: 100%;
+    height: 100%;
+}
+.sel_year option{
+    font-size: 1rem;
+    text-indent: 1rem;
+}
+.sel_month option,.sel_day option{
+    font-size: 1rem;
+    text-indent: 1.5rem;
+}
+@media only screen and (min-height:600px)
+{
+    .form{
+        display: none;
+        position: absolute;
+        width: 85%;
+        height: 50%;
+        background: url("../images/window.png") no-repeat;
+        background-size: 100% 100%;
+        left: 7.5%;
+        top: 30%;
+        z-index: 10;
+        padding: 0 5%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+    }
+
+    .sel_year{
+        margin-top: 3rem;
+        /*margin-right: 1rem;*/
+        width: 30%;
+        height: 3rem;
+        font-size: 2rem;
+        text-indent: 1.2rem;
+        background: #ffffff;
+        text-align: center;
+    }
+
+    .sel_month,.sel_day{
+        margin-top: 3rem;
+        /*margin-right: 1rem;*/
+        width: 25%;
+        height: 3rem;
+        font-size: 2rem;
+        text-indent: 1.7rem;
+        background: #ffffff;
+        text-align: center;
+    }
+    .contentWrap .form .hint{
+        margin: 2rem auto;
+        color: #ffcc99;
+    }
+    .contentWrap .form .pox{
+        margin-top: 5rem;
+        font-size: 2rem;
+        color:#ffffff;
+        font-weight: 500;
+    }
+    .findBtn{
+        height: 6rem;
+        width: 20rem;
+        margin: 10% auto;
+        text-align: center;
+
+    }
+    .submit{
+        display: block;
+        background: url("../images/btn_01.png") center no-repeat;
+        background-size: 100% 80%;
+        width: 100%;
+        height: 100%;
+
+    }
+    .sbtn1{
+        height: 5.5rem;
+        width: 13rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        background: url("../images/btn_03.png") center no-repeat;
+        background-size: 100% 100%;
+    }
+    .sbtn2{
+        height: 5.5rem;
+        width: 13rem;
+        display: inline-block;
+        background: url("../images/btn_04.png") center no-repeat;
+        background-size: 100% 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @keyframes shakeUd{
+        0% {bottom: 180px}
+        25% {bottom: 190px}
+        50% {bottom: 180px}
+        75% {bottom: 170px}
+        100% {bottom: 180px}
+    }
+    @-o-keyframes shakeUd{
+        0% {bottom: 180px}
+        25% {bottom: 190px}
+        50% {bottom: 180px}
+        75% {bottom: 170px}
+        100% {bottom: 180px}
+    }
+    @-webkit-keyframes shakeUd{
+        0% {bottom: 180px}
+        25% {bottom: 190px}
+        50% {bottom: 180px}
+        75% {bottom: 170px}
+        100% {bottom: 180px}
+    }
+    @-moz-keyframes shakeUd{
+        0% {bottom: 180px}
+        25% {bottom: 190px}
+        50% {bottom: 180px}
+        75% {bottom: 170px}
+        100% {bottom: 180px}
+    }
+}
+
+@media only screen and (max-height:600px)
+{
+    .form{
+        display: none;
+        position: absolute;
+        width: 85%;
+        height: 50%;
+        background: url("../images/window.png") center no-repeat;
+        background-size: 100% 100%;
+        left: 7.5%;
+        top: 30%;
+        z-index: 10;
+        padding: 0 5%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+    }
+
+    .sel_year{
+        margin-top: 2rem;
+        /*margin-right: 1rem;*/
+        width: 27%;
+        height: 2rem;
+        font-size: 1rem;
+        text-indent: 1rem;
+        background: #ffffff;
+    }
+    .sel_month,.sel_day{
+        margin-top: 2rem;
+        /*margin-right: 1rem;*/
+        width: 27%;
+        height: 2rem;
+        font-size: 1rem;
+        text-indent: 1.5rem;
+        background: #ffffff;
+    }
+    .contentWrap .form .hint{
+        margin: 1rem auto;
+        color: #ffff00;
+    }
+    .contentWrap .form .pox{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        color:#ffffff;
+        font-weight: 500;
+    }
+    .findBtn{
+        height: 4.5rem;
+        width: 18rem;
+        margin: 10% auto;
+        text-align: center;
+
+    }
+    .submit{
+        display: block;
+        background: url("../images/btn_01.png") center no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+
+    }
+    .sbtn1{
+        height: 4.5rem;
+        width: 11rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        background: url("../images/btn_03.png") center no-repeat;
+        background-size: 100% 100%;
+    }
+    .sbtn2{
+        height: 4.5rem;
+        width: 11rem;
+        display: inline-block;
+        background: url("../images/btn_04.png") center no-repeat;
+        background-size: 100% 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @keyframes shakeUd{
+        0% {bottom: 130px}
+        25% {bottom: 140px}
+        50% {bottom: 130px}
+        75% {bottom: 120px}
+        100% {bottom: 130px}
+    }
+    @-o-keyframes shakeUd{
+        0% {bottom: 130px}
+        25% {bottom: 140px}
+        50% {bottom: 130px}
+        75% {bottom: 120px}
+        100% {bottom: 130px}
+    }
+    @-webkit-keyframes shakeUd{
+        0% {bottom: 130px}
+        25% {bottom: 140px}
+        50% {bottom: 130px}
+        75% {bottom: 120px}
+        100% {bottom: 130px}
+    }
+    @-moz-keyframes shakeUd{
+        0% {bottom: 130px}
+        25% {bottom: 140px}
+        50% {bottom: 130px}
+        75% {bottom: 120px}
+        100% {bottom: 130px}
+    }
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    background: url("../images/main.png") center no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    display: none;
+}
+.container .title1{
+    color: #006666;
+    font-weight: 600;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+.container .ssd .sel_seed,.container .condition .sel_cond{
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+.container .ssd .sel_seed img,.container .condition .sel_cond img{
+    width: 100%;
+}
+.container .ssd,.container .condition{
+    display: none;
+    padding: 0 10%;
+    width: 80%;
+    z-index: 5;
+}
+.findBtn2 {
+    position: absolute;
+    height: 6rem;
+    width: 20rem;
+    left: 15%;
+    right: 15%;
+    top: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.submit2{
+
+    display: none;
+    background: url("../images/btn_02.png") center no-repeat;
+    background-size: 100% 80%;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.container .cap{
+    height: 30%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #006666;
+    padding-top: 5rem;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkitbox-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+.result{
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    left: 5%;
+    top: 2%;
+    display: none;
+    background: url("../images/shelter.png") center no-repeat;
+    background-size: 100% 100%;
+    z-index: 10;
+}
+.buttons{
+    position: relative;
+    width: 90%;
+    margin-top: 1rem;
+    white-space: nowrap;
+    height: 20%;
+    padding: 0 5%;
+}
+.text{
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 2rem;
+}
+.text .txt1{
+    font-size: 1.5rem;
+    color: black;
+}
+.text .txt2{
+    padding-top:1rem;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 900;
+}
+.text .txt3{
+    padding-top:1rem;
+    font-size: 1.5rem;
+    color: #339999;
+}
+.analysis{
+    position: relative;
+    width: 80%;
+    padding: 0 10% 1rem 10%;
+    height: 80%;
+    overflow: auto;
+    display: none;
+}
+.flower{
+    display: block;
+    width: 35%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:5rem;
+}
+
+.downloadWrap{
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    background: url("../images/download.png") center no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.downloadWrap p{
+    padding-top: 20%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.download1{
+    display: block;
+    width: 100%;
+    height:4.5rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    font-size: 2rem;
+    color: #ffffff;;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: #339999;
+    background-size: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin-top: 20%;
+}
+.download2{
+    display: block;
+    width: 100%;
+    height:4.5rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    font-size: 2rem;
+    color: #ffffff;;
+    text-align: center;
+    background: #339999;
+    background-size: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.share{
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    background: url("../images/shareLayer.png") center no-repeat;
+    background-size: 100% 100%;
+    z-index:20;
+}
+.share p{
+    width: 100%;
+    height: 4rem;
+    font-size: 1rem;
+    color: #9B9B9B;
+    text-align: center;
+    padding-top: 2rem;
+}
+.shareIcons{
+    width: 80%;
+    height: 10rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0;
+}
+.iconLink1{
+    float: left;
+    width: 17%;
+    margin-right: 10%;
+}
+.iconLink2{
+    float: left;
+    width: 17%;
+    margin-right: 10%;
+}
+.iconLink3{
+    float: left;
+    width: 17%;
+    margin-right: 10%;
+}
+.iconLink4{
+    float: left;
+    width: 17%;
+}
+.cancelBtn{
+    display: block;
+    width: 100%;
+    height:4rem;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+    font-size: 1rem;
+    color: #339999;;
+    text-align: center;
+    background: #000078;
+    background-size: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+
+}
+.maskPage{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.9;
+    z-index: 15;
+    display: none;
+}
+.maskPage .mask_txt1{
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 1.8rem;
+}
+/*------------- download.html css format ---------------------*/
+.maskPage{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.9;
+    z-index: 15;
+    display: none;
+}
+.downloadDiv{
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    background: url("../images/download_new.jpg") center no-repeat;
+    background-size: 100% 100%;
+}
+.para{
+    padding-top: 20%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.maskPage .mask_txt2{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 1.8rem;
+    line-height: 2rem;
+}
+.light{
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 32%;
+}
+.doro{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.download3{
+    display: block;
+    width: 90%;
+    height:4rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #ffffff;;
+    text-align: center;
+    /*margin-bottom: 1.5rem;*/
+    background: #ac9354;
+    background-size: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    position: absolute;
+    top: 37%;
+    left:5%;
+}
+
+.shareText{
+    font-size: 1.5rem;
+}
+.hiddenArea{
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    top: 10%;
+    left: 30%;
+    z-index: 30;
+}
+.dl_txt{
+    font-size: 1.5rem;
+    color: #808080;
+    text-align: center;
+    margin-top: 15%;
+    line-height: 2rem;
+}
+/*------------- invitation.html css format ---------------------*/
+.inviteDiv{
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    background: url("../images/dr_shareBg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.inviteMsg{
+    width: 100%;
+    color: #ac9354;
+}
+.inv_txt{
+    padding-bottom: 0.5rem;
+}
+.inviteTC{
+    font-size: 2rem;
+    color: #ff0000;
+}
+.phoneNum{
+    display: block;
+    width: 90%;
+    height:4rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #808080;
+    line-height: 4rem;
+    padding: 1rem 6%;
+    border: 3px solid #ac9354;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    position: relative;
+}
+.getTryCash{
+    display: block;
+    width: 90%;
+    height:4rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    line-height: 2rem;
+    color: #ffffff;;
+    text-align: center;
+    background: #ac9354;
+    background-size: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    position: relative;
+    margin-left:5%;
+}

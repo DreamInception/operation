@@ -1,0 +1,63 @@
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+    $(function() {
+        wx.config({
+            debug: false,
+            appId: '${(wjsc.appId)!""}',
+            timestamp: ${(wjsc.time?c)!""},
+            nonceStr: '${(wjsc.nonceStr)!""}',
+            signature: '${(wjsc.signature)!""}',
+            jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage"]
+        });
+        wx.ready(function () {
+            wx.onMenuShareTimeline({
+                title: '${(wjsc.user.userNickname)!""}送你一颗会收获钱的种子，速速领取',
+                link: "${(wjsc.globalProp.javaUrl)!"http://wx.duoroulicai.com/jye"}/plant/index.htm",
+                imgUrl: '${(globalProp.javaUrl)!"http://wx.duoroulicai.com/jye"}/images/plant_icon.jpg',
+                trigger: function (res) {
+
+                },
+                success: function (res) {
+                    $.ajax({
+                        url: "/jye/plant/share",
+                        success: function (data) {
+
+                        }
+                    });
+                },
+                cancel: function (res) {
+
+                },
+                fail: function (res) {
+                    alert(JSON.stringify(res));
+                }
+            });
+            wx.onMenuShareAppMessage({
+                title: '${(wjsc.user.userNickname)!""}送你一颗会收获钱的种子，速速领取',
+                link: "${(wjsc.globalProp.javaUrl)!"http://wx.duoroulicai.com/jye"}/plant/index.htm",
+                imgUrl: '${(globalProp.javaUrl)!"http://wx.duoroulicai.com/jye"}/images/plant_icon.jpg',
+                trigger: function (res) {
+
+                },
+                success: function (res) {
+                    $.ajax({
+                        url: "/jye/plant/share",
+                        success: function (data) {
+
+                        }
+                    });
+                },
+                cancel: function (res) {
+
+                },
+                fail: function (res) {
+                    alert(JSON.stringify(res));
+                }
+            });
+        });
+        $.cookie('_returnUrl_', "${(wjsc.globalProp.javaUrl)!"http://wx.duoroulicai.com/jye"}/plant/index.htm", {
+            expires: 1,
+            path: '/'
+        });
+    })
+</script>

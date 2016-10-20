@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${title!"种钱游戏-多肉理财"}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <link rel="stylesheet" type="text/css" href="css/duorou.css" />
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+<div class="pageUp" id="pageUp"></div>
+<div class="pageRule" id="pageRule">
+    <div class="pageDown"></div>
+    <p>活动细则：</p>
+    <p>1.该游戏每个账户仅拥有一次参与机会</p>
+    <p>2.体验金须成功购买多肉理财D7系列产品，体验金预期年化收益率为10%，周期为7天</p>
+    <p>3.本活动最终解释权归多肉理财所有</p>
+</div>
+<div class="shareDiv" id="shareDiv">
+    <div>
+        <span class="pageClose"></span>
+        <div class="pageShareTxt">
+            <p>分享即可额外获得1000元</p>
+            <p>100%的聪明人都不会错过哦</p>
+        </div>
+        <div class="goldPaper"> 
+            <img src="/images/experiencedMoney.png">
+        </div>
+    </div>
+</div>
+<!--<#include "../commons/_wx_plant_share.ftl" >-->
+<input type="hidden" id="share_txt" value="${(user.userNickname)!""} 送你一颗会收获钱的种子，速速领取">
+<input type="hidden" id="share_img_path" value="http://wx.duoroulicai.com/jye/images/plant_icon.jpg">
+<input type="hidden" id="share_desc" value="">
+<input type="hidden" id="_is_share_" value="1">
+<script type="text/javascript">
+    var plant_grow_amount = '${(plant_grow_amount?c)!0}';
+    var plant_grow_speed_in_second = '${(plant_grow_speed_in_second?c)!0}';
+    var next_step_amount = '${(next_step_amount?c)!0}';
+    var lasttime = '${(lasttime?c)!0}';
+    $(function(){
+        var time_distance = ((lasttime*1 - new Date().getTime())/1000) + 3;
+        var _res = setInterval(function()
+        {
+            time_distance -= 1;
+
+            var int_hour = Math.floor(time_distance/3600);
+            if (int_hour < 10) {
+                int_hour = '0'+int_hour;
+            }
+
+            time_distance_2 = time_distance % 3600;
+
+            var int_minute = Math.floor(time_distance_2/60);
+            if (int_minute < 10) {
+                int_minute = '0'+int_minute;
+            }
+
+            var int_second = Math.floor(time_distance_2 % 60);
+            if (int_second < 10) {
+                int_second = '0'+int_second;
+            }
+
+            $(".countdown").html(int_hour + ":" + int_minute + ":" + int_second);
+
+            if(time_distance <= 0){
+                clearInterval(_res);
+                $(".countdown").html("");
+            }
+        },1000);
+    });
+
+    function _appCallback() {
+        alert('welcome back~');
+    }
+
+</script>
+</body>
+</html>

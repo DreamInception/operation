@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/birthday.js"></script>
+    <script src="../js/index.js" charset="gb2312"></script>
+    <title>多肉理财</title>
+</head>
+<body>
+        <section id="section1" class="contentWrap">
+            <img src="../images/island.png" class="island">
+            <div class="form">
+                <p class="pox">请输入您的出生年月</p>
+                <select class="sel_year" rel="1990"></select>
+                <select class="sel_month" rel="1"></select>
+                <select class="sel_day" rel="1"></select>
+                <p class="hint">如：1990年1月1日出生<br/>请输入‘1990’年‘01’月‘01’日</p>
+                <div class="findBtn">
+                    <a href="javascript:void(0)" class="submit"></a>
+                </div>
+
+            </div>
+        </section>
+        <section id="section2" class="container">
+            <p class="title1">请挑选您喜欢的种子种下</p>
+            <div class="ssd">
+                <a href="javascript:void(0)" class="sel_seed"><img src="../images/redSeed.png"></a>
+                <a href="javascript:void(0)" class="sel_seed"><img src="../images/blueSeed.png"></a>
+                <a href="javascript:void(0)" class="sel_seed"><img src="../images/greenSeed.png"></a>
+            </div>
+            <img src="../images/island.png" class="island">
+        </section>
+        <section id="section3" class="container">
+            <p class="title1">长大, 似乎还缺少点什么...</p>
+            <div class="condition">
+                <a href="javascript:void(0)" class="sel_cond"><img src="../images/water.png"></a>
+                <a href="javascript:void(0)" class="sel_cond"><img src="../images/sunshine.png"></a>
+                <a href="javascript:void(0)" class="sel_cond"><img src="../images/temperature.png"></a>
+            </div>
+            <img src="../images/island2.png" class="island">
+        </section>
+        <div id="mask1" class="maskPage">
+            <img src="../images/light.png" class="light">
+            <p class="mask_txt2">so easy<br/>地球人都知道</p>
+        </div>
+        <section id="section4" class="container">
+            <p class="cap">倒计时:&nbsp;<span class="minute">00</span>:<span class="second">03</span></p>
+            <img src="../images/island3.png" id="before_status" class="island" style="display: block">
+            <img src="../images/island4.png" id="after_status" class="island" style="display: none">
+            <div class="findBtn2">
+                <a href="javascript:void(0)" class="submit2"></a>
+            </div>
+
+            <div class="result">
+                <div id="analysis1" class="analysis">
+                    <img src="../images/flower11.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>摩羯座（福娘）多肉君</p>
+                        <p class="txt2">摩羯座的福娘将会：升职</p>
+                        <ul class="txt3">
+                            <li>我乃时代的反潮流者</li>
+                            <li>炒股？俺不炒！玩P2P？俺不玩！</li>
+                            <li>玩外汇？</li>
+                            <li>“唔……这个听起来有点高端诶”</li>
+                            <li>“不错，符合我高冷的设定”</li>
+                            <li>算了，这么多人投资</li>
+                            <li>一点都不特别，债见</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis2" class="analysis">
+                    <img src="../images/flower12.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>水瓶座（绯杜鹃）多肉君</p>
+                        <p class="txt2">水瓶座的绯杜鹃将会：被追</p>
+
+                        <ul class="txt3">
+                            <li>理财界的黑洞、投资圈的噩梦</li>
+                            <li>最容易被忽悠的星座，没有之一</li>
+                            <li>有情商没财商的水瓶</li>
+                            <li>也许他设计十几种古灵精怪的理财</li>
+                            <li>产品logo</li>
+                            <li>但是完全不会记得自己投资了啥</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis3" class="analysis">
+                    <img src="../images/flower01.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>双鱼座（仙人掌）多肉君</p>
+                        <p class="txt2">双鱼座的仙人掌将会：中奖</p>
+                        <ul class="txt3">
+                            <li>“人家读书少，你不要骗我哦“</li>
+                            <li>双鱼这种傻白甜见谁信谁</li>
+                            <li>谁对双鱼好</li>
+                            <li>双鱼就对谁掏心掏肺</li>
+                            <li>倾家荡产也愿意</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis4" class="analysis">
+                    <img src="../images/flower02.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>白羊座（熊童子）多肉君</p>
+                        <p class="txt2">白羊座的熊童子将会：升杯</p>
+                        <ul class="txt3">
+                            <li>自信心爆棚、冲动型消费无节制</li>
+                            <li>什么“黑五”啦、圣诞折扣啦</li>
+                            <li>永远是冲在最前线的人型战斗机</li>
+                            <li>难道在hk拎着行李箱的土豪大妈</li>
+                            <li>都是白羊？</li>
+                            <li>赚得多，花得更多，永远在还信用卡</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis5" class="analysis">
+                    <img src="../images/flower03.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>金牛座（草芦荟）多肉君</p>
+                        <p class="txt2">金牛座的草芦荟将会：逆袭</p>
+                        <ul class="txt3">
+                            <li>金牛座的口头禅就是</li>
+                            <li>“慢慢来，不要慌张”</li>
+                            <li>忍得住寂寞，耐得起沉默</li>
+                            <li>“投资是什么？莫要打扰我参悟人生”</li>
+                            <li>吃货金牛宅在家摆出一个销魂的pose</li>
+                            <li>坐在零食山中茫然地发问</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis6" class="analysis">
+                    <img src="../images/flower04.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>双子座（不夜城芦荟）多肉君</p>
+                        <p class="txt2">双子座的不夜城芦荟将会：变帅</p>
+                        <ul class="txt3">
+                            <li>深谙理财之道的双子</li>
+                            <li>明白“不要把鸡蛋放在一个篮子里”</li>
+                            <li>的铁律</li>
+                            <li>这里投点，那里又投点</li>
+                            <li>全世界的理财项目都有双子座的身影</li>
+                            <li>账户多得自己都数不过来</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis7" class="analysis">
+                    <img src="../images/flower05.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>巨蟹座（京之华锦）多肉君</p>
+                        <p class="txt2">巨蟹座的京之华锦将会：涨粉</p>
+                        <ul class="txt3">
+                            <li>顾家NO.1的巨蟹座</li>
+                            <li>精明且眼光狠辣闷声发大财赚得</li>
+                            <li>满盆钵</li>
+                            <li>一旦女朋友撒娇</li>
+                            <li>“天天投资，都不陪人家哦。”</li>
+                            <li>巨蟹立刻撂挑子不干，甩担子走人</li>
+                            <li>“亲爱的，晚上想吃什么？我给你做。”</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis8" class="analysis">
+                    <img src="../images/flower06.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>狮子座（生石花）多肉君</p>
+                        <p class="txt2">狮子座的生石花将会：涨停</p>
+                        <ul class="txt3">
+                            <li>霸道总裁范的狮子座</li>
+                            <li>理财风格也是炫酷得突破天际</li>
+                            <li>从开户到转账完全一手掌控</li>
+                            <li>每天咆哮“死工资有用的话还要<br/>理财干嘛！”</li>
+                            <li>你，过来，朕要你立即理财！</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis9" class="analysis">
+                    <img src="../images/flower07.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>处女座（红辉艳）多肉君</p>
+                        <p class="txt2">处女座的红辉艳将会：变瘦</p>
+                        <ul class="txt3">
+                            <li>“这个账户还差0.01元就能凑成整数”</li>
+                            <li>“要不要买？</li>
+                            <li>还是等曲线达成完美的90度角？“</li>
+                            <li>“今年的利率不是我喜欢的数字”</li>
+                            <li>“现金？拿走！碰到细菌会死的啦！”</li>
+                            <li>特别注意，这是一个傲娇的星座</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis10" class="analysis">
+                    <img src="../images/flower08.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>天秤座（令箭荷花）多肉君</p>
+                        <p class="txt2">天秤座的令箭荷花将会：脱单</p>
+                        <ul class="txt3">
+                            <li>基金？股票？P2P？</li>
+                            <li>哎呀好纠结，到底哪个好？</li>
+                            <li>搞推销的被急哭了</li>
+                            <li>“姑奶奶，您别买了，放我走吧“</li>
+                            <li>等选择困难症的天秤选出合适的理</li>
+                            <li>财产品</li>
+                            <li>大概比千年等一回的涨停板还难</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis11" class="analysis">
+                    <img src="../images/flower09.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>天蝎座（锦晃星）多肉君</p>
+                        <p class="txt2">天蝎座的锦晃星将会：加薪</p>
+                        <ul class="txt3">
+                            <li>“上次亏了，我要复仇！“</li>
+                            <li>颇有心机和计划性的腹黑天蝎</li>
+                            <li>周密制定“复仇”计划想要一举扳</li>
+                            <li>回颓势</li>
+                            <li>然并卵   又亏了！！！</li>
+                            <li>理财世界好复杂，还是去复仇者联盟</li>
+                            <li>打怪兽吧</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="analysis12" class="analysis">
+                    <img src="../images/flower10.png" class="flower">
+                    <div class="text">
+                        <p class="txt1">XXX,您成功收获了专属您的<br/>射手座（大型玉露）多肉君</p>
+                        <p class="txt2">射手座的大型玉露将会：艳遇</p>
+                        <ul class="txt3">
+                            <li>“我们射手座，最讨厌谈钱，多伤感情啊”</li>
+                            <li>有钱就花有饭就蹭，理财是什么鬼？</li>
+                            <li>有钱不拿出来请客的都不是朋友！</li>
+                            <li>懂不懂我大天朝</li>
+                            <li>礼尚往来互相吃垮的贵族礼仪啊？</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="buttons">
+                    <a href="javascript:void(0)" class="sbtn1"></a>
+                    <a href="javascript:void(0)" class="sbtn2"></a>
+                </p>
+
+            </div>
+        </section>
+        <section id="section5" class="downloadWrap">
+            <p>
+                <img src="../images/doro.png" class="doro">
+                <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.duorou.duorouandroid" class="download1">Android版下载</a>
+                <a href="https://itunes.apple.com/cn/app/duo-rou-li-cai-bi10-hai-duo/id1067328168?mt=8" class="download2">IOS版下载</a>
+            </p>
+        </section>
+		<section class="hiddenArea" style="display: none">
+            <p class="shareText">XXX,<span></span></p>
+		</section>
+<script>
+    $.ms_DatePicker({
+        YearSelector: ".sel_year",
+        MonthSelector: ".sel_month",
+        DaySelector: ".sel_day"
+    });
+    $.ms_DatePicker();
+</script>
+</body>
+</html>

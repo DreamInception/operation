@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: #f0eff5;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+img{
+    border: none;
+    -webkit-transform: scale(1) rotate(0) translate3d(0,0,0);
+    transform: scale(1) rotate(0) translate3d(0,0,0);
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+input{
+    border: none;
+}
+.f-cb:after{
+    display: block;
+    clear: both;
+    content: '';
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+}
+.page1,.page2{
+    position: relative;
+    width: 100%;
+    /*overflow: hidden;*/
+    background-color: #1cacff;
+    background-size: 100% 100%;
+}
+.firstFriend img,.line1,.line2,.line3,.secondFriend img,.remind_info img,.staticPic img{
+    position: absolute;
+}
+.lookBtn{
+    position: absolute;
+    width: 41.7%;
+    display: block;
+    background: url("images/lookBtn.png") no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 1rem;
+    line-height:  3rem;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    text-decoration: none;
+    z-index: 100;
+}
+.inviteBtn{
+    position: absolute;
+    width: 60%;
+    display: block;
+    background: url("images/inviteBtn.png") no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 1rem;
+    line-height:  3rem;
+    color: #fff;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    z-index: 90;
+}
+.flipPage{
+    position: absolute;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.2rem;
+    text-align: center;
+}
+.flipPage p{
+    margin-top: 1rem;
+}
+.arrowUp,.arrowDown{
+    width: 4.8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden{
+    display: none;
+}
+.jumpPage{
+    position: relative;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.2rem;
+    text-align: center;
+    padding-top: 1.6rem;
+    padding-bottom: 1.2rem;
+}
+.jumpPage p{
+    margin-bottom: 1rem;
+}
+.rules{
+    position: relative;
+    margin-left: 4.9%;
+    width: 89.4%;
+
+}
+.topLayer{
+    z-index: 20;
+}
+/*----------------------------------------------------------------------- myCenter.html --------------------------------------------------------------------- */
+.contentWrap{
+    position: relative;
+    background: #0095f3;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.top{
+    width: 82%;
+    margin: 0 auto;
+    background: url("images/doubleCircle.png") no-repeat;
+    background-size: 100% 100%;
+}
+.left_area{
+    position: absolute;
+    left: 8.9%;
+    z-index: 5;
+    text-align: center;
+}
+.right_area{
+    position: absolute;
+    right: 8.9%;
+    z-index: 10;
+    text-align: center;
+}
+.left_area ul:first-child,.right_area ul:first-child{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+.bigger{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.line{
+    width: 66%;
+    height: 2px;
+    background: #4095e8;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+}
+.left_area ul:last-child,.right_area ul:last-child{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+.bottom{
+    width: 100%;
+    background: url("images/hill.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 8%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.tabs{
+    display: block;
+    padding-top: 4.6rem;
+}
+.no-invest{
+    float: left;
+    display: inline-block;
+    width: 32%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #06a4ff;
+    border: solid #fff 2px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /*border-right: none!important;*/
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    text-align: center;
+    margin-left: 19%;
+}
+.activeTab{
+    color: #06a4ff!important;
+    background: #fff!important;
+}
+.has-invest{
+    float: left;
+    display: inline-block;
+    width: 32%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #06a4ff;
+    border: solid #fff 2px;
+    /*border-left: none!important;*/
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    text-align: center;
+}
+.fc-info{
+    color: #fff;
+    float: left;
+
+}
+.fc-info>p:first-child{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.phoneNum{
+    padding-left: 2rem;
+}
+.fc-info>p:nth-child(2){
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-bottom: 0.5rem;
+}
+.time{
+    padding-left: 1rem;
+}
+.sendBtn{
+    float: right;
+    width: 9.4rem;
+    height: 3rem;
+    background: url("images/sendMsgBtn.png") no-repeat;
+    background-size: 100% 100%;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+.finishBtn{
+    float: right;
+    width: 9.4rem;
+    height: 3rem;
+    background-color: #0084e0;
+    background-size: 100% 100%;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+.ffBtn{
+    float: right;
+    width: 9.4rem;
+    height: 3rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+.invBtn{
+    float: right;
+    width: 9.4rem;
+    height: 3rem;
+    background-color: transparent;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+.ffBtn p:nth-child(2){
+    font-size: 0.8rem;
+}
+.friendCircle li{
+    clear: both;
+    padding: 1.6rem 0 1.2rem 0;
+    border-bottom: dotted 1px #fff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.friendCircle li:last-child{
+    border-bottom: none;
+}
+.friendCircle{
+    display: none;
+}
+
+/*----------------------------------------------------------- shareFriend01 --------------------------------------------------------*/
+.sf_container{
+    position: relative;
+    background: #1cacff;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.star{
+    position: absolute;
+    width: 100%;
+}
+.sf_rectArea{
+    width: 100%;
+    background: url("images/rectangle.png") no-repeat;
+    background-size: 100% 100%;
+}
+.headCircle{
+    width: 20.7%;
+    margin: 0 auto;
+    /*background: #fff;*/
+    border-radius: 3.75rem;
+    -webkit-border-radius: 3.75rem;
+    -moz-border-radius: 3.75rem;
+    -o-border-radius: 3.75rem;
+}
+.headCircle img{
+    width: 100%;
+}
+.friend_give_text{
+    font-size: 1.6rem;
+    color: #70cbff;
+    line-height: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.giveAmount{
+    width: 64%;
+    margin: 0 auto;
+}
+.ga_left{
+    float: left;
+}
+.ga_left p:first-child,.ga_right p:first-child{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #70cbff;
+    padding-bottom: 8px;
+}
+.ga_right{
+    float: right;
+}
+.ga_left p:last-child,.ga_right p:last-child{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 8px;
+}
+.sf_inputArea{
+    position: relative;
+    width: 100%;
+    padding: 0 8.2%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    text-align: center;
+}
+.ticketArea{
+    width: 100%;
+    background: url("images/rateTicket.png") no-repeat;
+    background-size: 100% 100%;
+    /*margin-top: -3rem;*/
+}
+.ticketArea p:first-child{
+    /*padding-top: 3rem;*/
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #4c4c4c;
+}
+.ticketArea p:last-child{
+    /*margin-top: 1.2rem;*/
+    font-size: 3.8rem;
+    line-height: 3.8    rem;
+    color: #fff;
+}
+.sf_phoneNum{
+    display: block;
+    border: none;
+    background: #fff;
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    margin-top: 3.5rem;
+    font-size: 1.5rem;
+    color: #b9b9b9;
+    width: 100%;
+}
+.gainTyj_Btn{
+    display: block;
+    background: #116cf0;
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+.ruleBook{
+    width: 92%;
+    margin: 4rem 4% 3rem 4%;
+}
+.mmTitle{
+    width: 81.5%;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+    display: block;
+}
+.left_Cloud{
+    float: left;
+    margin: 10px 0 0 5px;
+    width: 18.6%;
+    display: inline-block;
+}
+.right_Cloud{
+    float: right;
+    margin: 2.4rem 0 0 0;
+    width: 18.6%;
+    display: inline-block;
+}
+.headCircle2{
+    position: absolute;
+    left: 40%;
+    top: -3.9rem;
+    width: 20.7%;
+    margin: 0 auto;
+    /*background: #fff;*/
+    border-radius: 3.75rem;
+    -webkit-border-radius: 3.75rem;
+    -moz-border-radius: 3.75rem;
+    -o-border-radius: 3.75rem;
+}
+.headCircle2 img{
+    width: 100%;
+}
+/*.ta-up{*/
+    /*margin-top: -2rem;*/
+/*}*/
+/*----------------------------------------------------------- gainSuccess --------------------------------------------------------*/
+.gs_bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("images/gainBonusBg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.gainTyjBtn{
+    position: absolute;
+    width: 88%;
+    left: 6%;
+    margin: 0 auto;
+    background: #ff9b59;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+}

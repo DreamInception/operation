@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*font-family: "宋体",Arial, sans-serif;*/
+}
+
+ul li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    border: none;
+    -webkit-transform: scale(1) rotate(0) translate3d(0,0,0);
+    transform: scale(1) rotate(0) translate3d(0,0,0);
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+input{
+    border: none;
+}
+select{
+    display: block;
+}
+.page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+}
+.cap{
+    position: relative;
+    margin-left: 65%;
+    color: #000000;
+    font-size: 1.5rem;
+    font-family: "宋体",Arial, sans-serif;
+}
+.showMsg{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    bottom: 0;
+    display: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    line-height: 4rem;
+    background: #000000;
+    opacity: 0.9;
+    z-index: 10;
+    font-family: "宋体",Arial, sans-serif;
+}
+.itemName1{
+    position: absolute;
+    left: 5.6%;
+    color: #ffffff;
+    display: inline-block;
+}
+.itemName2{
+    position: absolute;
+    left: 38.4%;
+    color: #ffffff;
+    display: inline-block;
+}
+.itemName3{
+    position: absolute;
+    left: 74%;
+    color: #ffffff;
+    display: inline-block;
+}
+.itemNum{
+    color: #ff0000;
+}
+.maskBg{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(33,43,44,0.8);
+    z-index: 10;
+    display: none;
+}
+.showWindow{
+    width: 159px;
+    height: 197px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+    background: url("../images/alertW.png") no-repeat;
+    background-size: 100% 100%;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+}
+.pTitle{
+    padding-top: 17px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.swo{
+    display: none;
+}
+.reward{
+    color: #f9f8a9;
+}
+.pReward1{
+    position: absolute;
+    top: 64px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+}
+.pReward2{
+    position: absolute;
+    top: 81px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+}
+.pButton{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    bottom: 0;
+    position: absolute;
+    background: #ca5756;
+    font-family: "宋体",Arial, sans-serif;
+}
+.selectBtn{
+    color: #ffffff;
+    font-size: 1rem;
+    display: block;
+}
+/** -----------page0 format start ------------------ **/
+.shelter{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.88);
+    z-index: 10;
+    display: none;
+    font-family: "宋体",Arial, sans-serif !important;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 2.5rem;
+}
+.readLink,.passLink{
+    width: 24.8%;
+    margin: 0 auto;
+}
+.readLink img,.passLink img{
+    width: 100%;
+}
+.arrow{
+    width: 28.3%;
+    padding-left: 65%;
+}
+.passedTxt{
+    padding-top: 1rem;
+}
+.page0{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    background: url("../images/index.png") center no-repeat;
+    background-size: 100% 100%;
+}
+.div_element{
+    width: 100%;
+    position: relative;
+}
+.div_light{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+.monkey{
+    width: 29%;
+    margin: 0 auto;
+}
+.pinkBig{
+    position: absolute;
+    left: 2%;
+    top: 0;
+    width: 22.7%;
+}
+.pinkSmall{
+    position: absolute;
+    left: 22%;
+    top: 0;
+    width: 12.8%;
+}
+.redSmall{
+    position: absolute;
+    left: 70%;
+    top: 0;
+    width: 12.8%;
+}
+.redBig{
+    position: absolute;
+    left: 78%;
+    top: 0;
+    width: 21.6%;
+}
+.div_Btn{
+    position: absolute;
+    width: 50%;
+    left: 28%;
+}
+.btn{
+    width: 100%;
+}
+/** -----------page0 format end ------------------ **/
+
+/** -----------page1 format start ------------------ **/
+.page1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    background: url("../images/forBg.png")  no-repeat;
+    background-size: 100% 100%;
+}
+.inputBox1{
+    width: 30%;
+    margin-left: 3%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+    font-family: Arial, sans-serif;
+}
+.inputBox2{
+    width: 30%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+    font-family: Arial, sans-serif;
+}
+.inputBox3{
+    width: 30%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+    font-family: Arial, sans-serif;
+}
+.div_moneyBtn{
+    clear: both;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+}
+/** -----------page1 format end ------------------ **/
+
+/** -----------page2 format start ------------------ **/
+.page2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    background: url("../images/volcano.gif")  no-repeat;
+    background-size: 100% 100%;
+}
+.divTitle{
+    width: 100%;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+.hl_txt{
+    font-size: 2rem;
+    color: #ff0000;
+    font-weight: 600;
+}
+.div_findBtn{
+    position: absolute;
+    width: 59%;
+    left: 23%;
+}
+/** -----------page2 format end ------------------ **/
+
+/** -----------page3 format start ------------------ **/
+.page3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    background: url("../images/location.png")  no-repeat;
+    background-size: 100% 100%;
+}
+.divDoor1{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 29%;
+    margin-left: 3.2%;
+}
+.divDoor2{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 29%;
+    margin-left: 3.2%;
+}
+.divDoor3{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 29%;
+    margin-left: 3.2%;
+}
+.close{
+    display: block;
+    width: 100%;
+}
+.close img{
+    width: 100%;
+}
+.open{
+    display: none;
+    width: 100%;
+}
+.open img{
+    width: 100%;
+}
+/** -----------page3 format end ------------------ **/
+
+/** -----------subPage1 format start ------------------ **/
+.page1_Up{
+    position: absolute;
+    width: 3.2%;
+    left: 46%;
+    top: 6%;
+    z-index: 5;
+}
+.page1_Up .rp,.page1_Up .rp img{
+    display: block;
+    width: 100%;
+}
+.page1_Mid{
+    position: absolute;
+    width: 1.7%;
+    left: 53.3%;
+    top: 59%;
+    z-index: 5;
+}
+.page1_Mid .rp,.page1_Mid .rp img{
+    display: block;
+    width: 100%;
+}
+.page1_Down{
+    position: absolute;
+    width: 3.9%;
+    left: 9%;
+    bottom: 10%;
+    z-index: 5;
+}
+.page1_Down .rp,.page1_Down .rp img{
+    display: block;
+    width: 100%;
+}
+
+.subPage1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    background: url("../images/front_Office.png")  no-repeat;
+    background-size: 100% 100%;
+}
+/** -----------subPage1 format end ------------------ **/
+
+/** -----------subPage2 format start ------------------ **/
+.page2_Up{
+    position: absolute;
+    width: 6.5%;
+    left: 49%;
+    top: 5.1%;
+    z-index: 5;
+}
+.page2_Up .rp,.page2_Up .rp img{
+    display: block;
+    width: 100%;
+}
+.page2_Mid{
+    position: absolute;
+    width: 6.4%;
+    left: 25.6%;
+    top: 37.6%;
+    z-index: 5;
+}
+.page2_Mid .rp,.page2_Mid .rp img{
+    display: block;
+    width: 100%;
+}
+.page2_Down{
+    position: absolute;
+    width: 4.9%;
+    left: 36.4%;
+    bottom: 8.1%;
+    z-index: 5;
+}
+.page2_Down .rp,.page2_Down .rp img{
+    display: block;
+    width: 100%;
+}
+.subPage2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    background: url("../images/boss_office.png")  no-repeat;
+    background-size: 100% 100%;
+}
+/** -----------subPage2 format end ------------------ **/
+
+/** -----------subPage3 format start ------------------ **/
+.page3_Up{
+    position: absolute;
+    width: 5%;
+    left: 78%;
+    top: 33.1%;
+    z-index: 5;
+}
+.page3_Up .rp,.page3_Up .rp img{
+    display: block;
+    width: 100%;
+}
+.page3_Mid{
+    position: absolute;
+    width: 5.2%;
+    left: 21.3%;
+    top: 36.5%;
+    z-index: 5;
+}
+.page3_Mid .rp,.page3_Mid .rp img{
+    display: block;
+    width: 100%;
+}
+.page3_Down{
+    position: absolute;
+    width: 6%;
+    left: 77%;
+    bottom: 21.2%;
+    z-index: 5;
+}
+.page3_Down .rp,.page3_Down .rp img{
+    display: block;
+    width: 100%;
+}
+.subPage3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    background: url("../images/fina_Office.png")  no-repeat;
+    background-size: 100% 100%;
+}
+/** -----------subPage3 format end ------------------ **/
+
+/** -----------lastPage format start ------------------ **/
+.contentWrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    background: url("../images/lastPage.gif") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    font-family: "宋体",Arial, sans-serif;
+}
+.activity{
+    position: absolute;
+    top: 1rem;
+    right: 2.7%;
+    width: 19%;
+    height: 2rem;
+    background: #000000;
+    background-size: 100% 100%;
+    line-height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.detail{
+    color: #ffffff;
+    font-family: "宋体",Arial, sans-serif;
+}
+.express{
+    width: 100%;
+    line-height: 4.5rem;
+    font-size: 3.5rem;
+}
+.tryTxt{
+    color: #ffffff;
+}
+.prize{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.optionNum{
+    color: #ffffff;
+}
+.buttons{
+    position: absolute;
+    width: 100%;
+}
+.belTxt{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: "宋体",Arial, sans-serif;!important;
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+.getPrize{
+    width: 40%;
+    margin-left: 30%;
+}
+.sharePrize{
+    width: 40%;
+    margin-left: 30%;
+}
+.getPrize img,.sharePrize img{
+    width: 100%;
+}
+.maskPage{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #000000;
+    opacity: 0.9;
+    z-index: 10;
+    display: none;
+    font-family: "宋体",Arial, sans-serif !important;
+}
+.glass{
+    width: 73%;
+    margin-left: 27%;
+}
+.grade{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.seconds{
+    font-size: 3rem;
+    color: #ff0000;
+}
+.maskRule{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #000000;
+    opacity: 0.88;
+    z-index: 10;
+    display: none;
+    font-family: "宋体",Arial, sans-serif !important;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+.rule_Cap{
+    font-size: 1.5rem;
+}
+.rule_Txt{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+
+}
+/** -----------lastPage format end ------------------ **/
+
+/** -----------Page5 format start ------------------ **/
+/** -----------Page5 format end ------------------ **/

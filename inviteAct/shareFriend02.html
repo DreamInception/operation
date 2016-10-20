@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="fastclick.js"></script>
+    <title>Boss决定给你发奖金了</title>
+    <script>
+        $(function(){
+            var height = $(window).height;
+
+            initCou();
+
+            function initCou(){
+                var cou_width = $(".ticketArea").width();
+                var cou_height = cou_width*452/935;
+                var head_icon = $(".headCircle").width();
+                $(".ticketArea").css("height",cou_height);
+                $(".ticketArea p:first-child").css("paddingTop",cou_height*40/152);
+                $(".ticketArea p:last-child").css("paddingTop",cou_height*14/152);
+            }
+            FastClick.attach(document.body);
+
+        })
+    </script>
+</head>
+<body>
+    <article class="sf_container">
+        <img src="images/starBg.png" class="star">
+        <img src="images/mm_title.png" class="mmTitle">
+        <div class="f-cb">
+            <img src="images/left_Cloud.png" class="left_Cloud">
+            <img src="images/right_Cloud.png" class="right_Cloud">
+        </div>
+        <section class="sf_inputArea">
+            <!--<div class="headCircle2">-->
+                <img src="images/headIcon.png" class="headCircle2">
+            <!--</div>-->
+            <div class="ticketArea" style="margin-top: -3rem;">
+                <p>
+                    <span class="name">陈晨晨</span>在多肉理财平台送您
+                </p>
+                <p>￥143330</p>
+            </div>
+            <input type="text" class="sf_phoneNum" placeholder="请输入手机号">
+            <a href="#" class="gainTyj_Btn">
+                立即领取奖金
+            </a>
+        </section>
+        <img src="images/ruleBook.png" class="ruleBook">
+    </article>
+</body>
+</html>

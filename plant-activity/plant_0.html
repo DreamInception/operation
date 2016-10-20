@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${title!"种钱游戏-多肉理财"}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <link rel="stylesheet" type="text/css" href="css/duorou.css" />
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+<div class="bgBottom"></div>
+<!--div class="iconWrap">
+    <a href="${(globalProp.phpUrl)!"http://wx.duoroulicai.com"}/index.php?s=/Account/activities.html" class="pageHome pageHomeGreen"></a>
+</div -->
+<div class="pageContent">
+    <img src="images/seedword.png">
+    <a class="plantBtn"><span class="planttxt">快快种下</span></a>
+</div>
+<input type="hidden" id="plant0">
+<script type="text/javascript">
+    $(function(){
+        var top = $('.pageRule').outerHeight();
+//        $('.pageRule').css({'bottom':-top + 'px'});
+        $('.pageRule').css({'bottom':"0px"});
+        $(".pageUp").click(function(){
+            $(".pageRule").animate({bottom:"0px"},500);
+            $(".pageUp").hide();
+        });
+        $(".pageDown").click(function(){
+            $(".pageRule").animate({bottom:-top + "px"},500);
+            $(".pageUp").show();
+        });
+
+        var wholeHeight = window.screen.height;
+        if (wholeHeight >= 600) {
+            fallHeight = wholeHeight * 0.6;
+        }else if(wholeHeight >= 550){
+            fallHeight = wholeHeight * 0.53;
+        }else {
+            fallHeight = wholeHeight * 0.46;
+        }
+        $(".plantBtn").click(function(){
+            $('.planttxt').fadeOut("300");
+            $(".plantBtn").animate({marginTop:fallHeight + "px",width:"2px"},1000);
+//            window.location = "/jye/plant/join.htm";
+            window.location.href = "plant_1.html";
+        });
+    });
+</script>
+<!--<#include "base.ftl">-->
+<!--<script type="text/javascript" src="js/jumpPage.js"></script>-->
+</body>
+</html>
